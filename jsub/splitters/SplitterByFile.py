@@ -5,7 +5,7 @@ Created on 2015-06-09 20:22:39
 @author: suo
 '''
 import os,sys
-from base.Splitter import Splitter
+from splitters.Splitter import Splitter
 
 class SplitterByFile(Splitter):
     

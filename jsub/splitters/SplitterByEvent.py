@@ -3,7 +3,7 @@ Created on 2015-06-09 20:24:22
 
 @author: suo
 '''
-from base.Splitter import Splitter
+from splitters.Splitter import Splitter
 
 class SplitterByEvent(Splitter):
     def __init__(self,eventPer = None,eventTotal = None, seedStart = None, splitterDict = None):

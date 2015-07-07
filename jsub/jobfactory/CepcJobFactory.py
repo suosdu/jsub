@@ -4,7 +4,7 @@ Created on 2015-07-06 15:42:47
 @author: suo
 '''
 import os
-from base.JobFactory import JobFactory
+from jobfactory.JobFactory import JobFactory
 
 class CepcJobFactory(JobFactory):
     

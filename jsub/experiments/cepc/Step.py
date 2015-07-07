@@ -3,7 +3,7 @@ Created on 2015-06-01 12:54:09
 
 @author: suo
 '''
-from base.Step import Step
+from experiments.Step import Step
 from optionsParser.CepcSimParser import CepcSimParser
 from optionsParser.CepcRecParser import CepcRecParser
 

@@ -3,7 +3,7 @@ Created on 2015-06-30 22:26:30
 
 @author: suo
 '''
-from base.Backend import Backend
+from backend.Backend import Backend
 from DIRAC.Interfaces.API.Dirac import Dirac as GridDirac
 from DIRAC.Interfaces.API.Job import Job
 from DIRAC.Core.Security.ProxyInfo import getProxyInfo
