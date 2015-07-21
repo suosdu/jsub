@@ -1,0 +1,30 @@
+Experiment:
+  Name: cepc
+  JobSteps:
+    - Type: Sim
+      Executable: Mokka
+      JobOption: 
+        - /home/cc/suob/jsub/example/workfiles/template/simu.macro
+        - /home/cc/suob/jsub/example/workfiles/template/event.macro
+      ReturnData: true
+    - Type: Rec
+      Executable: Marlin
+      JobOption:
+        - /home/cc/suob/jsub/example/workfiles/template/reco.xml
+        - /home/cc/suob/jsub/example/workfiles/template/PandoraLikelihoodData9EBin.xml
+        - /home/cc/suob/jsub/example/workfiles/template/PandoraSettingsDefault.xml
+      ReturnData: true
+      
+Splitter:
+  Type: ByFile
+  EventMaxPerJob: 10
+  SeedStart: auto
+  InputData: /home/cc/suob/jsub/example/workfiles/stdhep.list
+  
+Backend:
+  Name: Dirac
+  Site:
+    - CLUSTER.YANT.cn
+  JobGroup: suob-cepc-0702
+  OutputSe: WHU-USER
+  OutputDir: test/cepc/0702

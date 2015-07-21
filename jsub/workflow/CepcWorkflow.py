@@ -12,15 +12,21 @@ class CepcWorkflow(Workflow):
     
     def prepare(self, f):
         content = '''#!/usr/bin/env python
-import sys,os
+import sys,os,tarfile
 from subprocess import call
 from DIRAC import siteName
+from DIRAC.Core.Base import Script
+Script.parseCommandLine( ignoreErrors = False )
 
-logFile = open('job.log', 'w')
-errFile = open('job.err', 'w')
 \'''********************Preparation********************\'''
 jobID = os.environ.get('DIRACJOBID', '0')
 siteName = siteName()
+
+call(['python','setJobStatus.py',jobID,'CEPC_script','Preparation'])
+
+tarobj = tarfile.open('modules.tgz', "r:gz")
+tarobj.extractall()
+tarobj.close()
 
 call(['python','checkExeEnv.py'])
 
@@ -28,20 +34,20 @@ result = call(['python','checkCvmfs.py','%s',jobID])
 if result!=0:
     sys.exit(result)
 
-call(['python','listInputSanbox.py'])
+call(['python','listInputSandbox.py'])
 
-call(['python','determineMirrorDB.py',siteName])\n''' % '/cvmfs/cepc/ihep.ac.cn/'
+call(['python','determineMirrorDB.py',siteName])\n''' % '/cvmfs/cepc.ihep.ac.cn/'
 
-        if self.jobPara['totalJobs'] < 50 or self.jobPara['evtmax'] < 30:
+        if self.jobParam['totalJobs'] < 50 or self.jobParam['eventNum'] < 30:
             timeString = 'max_q_time = 0\n'
-        elif self.jobPara['evtmax'] < 60:
+        elif self.jobParam['eventNum'] < 60:
             timeString = 'max_q_time = 60 * 5\n'
-        elif self.jobPara['evtmax'] < 120:
+        elif self.jobParam['eventNum'] < 120:
             timeString = 'max_q_time = 60 * 10\n'
         else:
             timeString = 'max_q_time = 60 * 15\n'
         
-        content= content+timeString+'''call(['python','determineQueue.py',siteName,max_q_time])\n'''
+        content= content+timeString+'''call(['python','determineQueue.py',siteName,str(max_q_time),jobID,'CEPC_script'])\n'''
         f.write(content)
 
     def download(self,f):
@@ -57,7 +63,7 @@ call(['python','setJobStatus.py',jobID,'CEPC_script','%s Simulation'])
 call(['python','tmsg.py','Start simulation'])
 result = call(['./simu.sh','%s'])
 
-call(['python','checkSimuLog.py',result])\n''' % (sim.executable,sim.executable)
+call(['python','checkSimuLog.py',str(result),jobID])\n''' % (sim.executable,sim.executable)
             f.write(content)
             
         if '2' in self.stepNumList:
@@ -69,21 +75,25 @@ call(['python','setJobStatus.py',jobID,'CEPC_script','%s Reconstruction'])
 call(['python','tmsg.py','Start reconstruction'])
 call(['./reco.sh','%s'])
 
-call(['python','checkRecoLog.py',%d])\n''' % (rec.executable,rec.executable)
+call(['python','checkRecoLog.py','%s',jobID])\n''' % (rec.executable,rec.executable,self.jobParam['eventNum'])
             f.write(content)
     
     def uploadData(self,f):
         content = '''\n\'''********************Upload Data********************\'''
 from uploadData import uploadData
 lfns = %s
-se = %s'''% (self.jobParam['outputData'], self.jobParam['se'])
+se = '%s\''''% (self.jobParam['outputData'], self.jobParam['se'])
 
         content+='''
 for lfn in lfns:
     call(['python','setJobStatus.py',jobID,'CEPC_script','Uploading Data'])
-    result = uploadData(lfn, se, logFile, errFile)
+    result = uploadData(lfn, se)
     if not result['OK']:
-        print>>errFile, 'Upload Data Error:\\n%s' % result\n''' 
+        try:
+            with open ('job.err','a') as errFile:
+                print>>errFile, 'Upload Data Error:\\n%s' % result
+        except IOError as e:
+            print 'IOError:',str(e)\n'''
         f.write(content)        
     
     def complete(self,f):
@@ -91,9 +101,7 @@ for lfn in lfns:
 call(['python','tmsg.py','Job Completed. Files in current dir:'])
 call(['ls','-l'])
 call(['python','setJobStatus.py',jobID,'CEPC_script','Done'])
-call(['python','tmsg.py','Job Done'])
-logFile.close()
-errFile.close()\n'''
+call(['python','tmsg.py','Job Done'])\n'''
         f.write(content)
                      
 if __name__ == '__main__':

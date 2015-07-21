@@ -1,0 +1,98 @@
+<<<<<<<<<< runtimeScript.py Standard Output >>>>>>>>>>
+
+ 
+==================== 2015-07-12 17:48:11 check execute environment ====================
+yantian.ihep.ac.cn
+Sun Jul 12 17:48:11 CST 2015
+Linux yantian.ihep.ac.cn 2.6.32-504.8.1.el6.x86_64 #1 SMP Tue Jan 27 13:39:10 CST 2015 x86_64 x86_64 x86_64 GNU/Linux
+ 
+==================== 2015-07-12 17:48:11 Check cvmfs ====================
+cepcsoft
+new_repository
+ 
+==================== 2015-07-12 17:48:19 Files from inputSandbox: ====================
+total 584
+-rw-r--r--. 1 dirac dirac    584 Jul 10 12:02 checkCvmfs.py
+-rw-r--r--. 1 dirac dirac    192 Jul  7 17:24 checkExeEnv.py
+-rw-r--r--. 1 dirac dirac    562 Jul 10 15:31 checkRecoLog.py
+-rw-r--r--. 1 dirac dirac    368 Jul  7 17:24 checkSimuLog.py
+-rw-r--r--. 1 dirac dirac    416 Jul  7 17:24 determineMirrorDB.py
+-rw-r--r--. 1 dirac dirac    537 Jul 10 14:09 determineQueue.py
+-rw-r--r--. 1 dirac dirac     67 Jul 12 17:23 event.macro
+-rw-r--r--. 1 dirac dirac      0 Jul  7 17:24 __init__.py
+-rwxr-xr-x. 1 dirac dirac   6175 Jul 12 17:23 jobDescription.xml
+-rw-r--r--. 1 dirac dirac   1690 Jul 12 17:48 job.info
+-rw-r--r--. 1 dirac dirac    154 Jul  7 17:24 listInputSandbox.py
+-rw-r--r--. 1 dirac dirac   2617 Jul 12 17:23 modules.tgz
+-rw-r--r--. 1 dirac dirac  50017 Jul 12 17:23 PandoraLikelihoodData9EBin.xml
+-rw-r--r--. 1 dirac dirac  24423 Jul 12 17:23 PandoraSettingsDefault.xml
+-rw-r--r--. 1 dirac dirac 384044 Jul 12 17:48 Psze_l0nunu.e0.p0.00001.stdhep
+-rw-r--r--. 1 dirac dirac    207 Jul 10 14:37 reco.sh
+-rw-r--r--. 1 dirac dirac      0 Jul  7 17:24 reco.sh~
+-rw-r--r--. 1 dirac dirac  47370 Jul 12 17:23 reco.xml
+-rwxr-xr-x. 1 dirac dirac   2383 Jul 12 17:23 runtimeScript.py
+-rw-r--r--. 1 dirac dirac    566 Jul 10 18:44 setJobStatus.py
+-rw-r--r--. 1 dirac dirac    497 Jul 12 17:23 simu.macro
+-rw-r--r--. 1 dirac dirac    211 Jul 10 14:36 simu.sh
+-rw-r--r--. 1 dirac dirac    202 Jul  7 17:24 simu.sh~
+-rw-r--r--. 1 dirac dirac    352 Jul 12 17:48 std.out
+-rw-r--r--. 1 dirac dirac    167 Jul  7 17:24 tmsg.py
+-rw-r--r--. 1 dirac dirac   3081 Jul 10 15:30 uploadData.py
+ 
+==================== 2015-07-12 17:48:19 Determine which mirror DB to use ====================
+Use default DB 202.114.78.211
+ 
+==================== 2015-07-12 17:48:19 Generate shell script for simulation ====================
+ 
+==================== 2015-07-12 17:48:21 Start simulation ====================
+ 
+==================== 2015-07-12 17:54:35 Generate shell script for reconstruction ====================
+ 
+==================== 2015-07-12 17:54:36 Start reconstruction ====================
+ 
+==================== 2015-07-12 17:56:12 Job Completed. Files in current dir: ====================
+total 18000
+-rw-r--r--. 1 dirac dirac   13704 Jul 12 17:55 bbudsc_3evt_stdreco_0.root
+-rw-r--r--. 1 dirac dirac     584 Jul 10 12:02 checkCvmfs.py
+-rw-r--r--. 1 dirac dirac     192 Jul  7 17:24 checkExeEnv.py
+-rw-r--r--. 1 dirac dirac     562 Jul 10 15:31 checkRecoLog.py
+-rw-r--r--. 1 dirac dirac     368 Jul  7 17:24 checkSimuLog.py
+-rw-r--r--. 1 dirac dirac     416 Jul  7 17:24 determineMirrorDB.py
+-rw-r--r--. 1 dirac dirac     537 Jul 10 14:09 determineQueue.py
+-rw-r--r--. 1 dirac dirac      67 Jul 12 17:23 event.macro
+-rw-r--r--. 1 dirac dirac   31152 Jul 12 17:48 GearOutput.xml
+-rw-r--r--. 1 dirac dirac       0 Jul  7 17:24 __init__.py
+-rwxr-xr-x. 1 dirac dirac    6175 Jul 12 17:23 jobDescription.xml
+-rw-r--r--. 1 dirac dirac       0 Jul 12 17:55 job.err
+-rw-r--r--. 1 dirac dirac    1690 Jul 12 17:48 job.info
+-rw-r--r--. 1 dirac dirac     230 Jul 12 17:56 job.log
+-rw-r--r--. 1 dirac dirac     154 Jul  7 17:24 listInputSandbox.py
+-rw-r--r--. 1 dirac dirac    2617 Jul 12 17:23 modules.tgz
+-rw-r--r--. 1 dirac dirac   50017 Jul 12 17:23 PandoraLikelihoodData9EBin.xml
+-rw-r--r--. 1 dirac dirac   24423 Jul 12 17:23 PandoraSettingsDefault.xml
+-rw-r--r--. 1 dirac dirac 9790092 Jul 12 17:55 Psze_l0nunu.e0.p0.00001_rec.slcio
+-rw-r--r--. 1 dirac dirac 7794528 Jul 12 17:54 Psze_l0nunu.e0.p0.00001_sim.slcio
+-rw-r--r--. 1 dirac dirac  384044 Jul 12 17:48 Psze_l0nunu.e0.p0.00001.stdhep
+-rw-r--r--. 1 dirac dirac  100768 Jul 12 17:55 reco.log
+-rwxr-xr-x. 1 dirac dirac     207 Jul 10 14:37 reco.sh
+-rw-r--r--. 1 dirac dirac       0 Jul  7 17:24 reco.sh~
+-rw-r--r--. 1 dirac dirac   47370 Jul 12 17:23 reco.xml
+-rwxr-xr-x. 1 dirac dirac    2383 Jul 12 17:23 runtimeScript.py
+-rw-r--r--. 1 dirac dirac     566 Jul 10 18:44 setJobStatus.py
+-rw-r--r--. 1 dirac dirac   82964 Jul 12 17:54 simu.log
+-rw-r--r--. 1 dirac dirac     497 Jul 12 17:23 simu.macro
+-rwxr-xr-x. 1 dirac dirac     211 Jul 10 14:36 simu.sh
+-rw-r--r--. 1 dirac dirac     202 Jul  7 17:24 simu.sh~
+-rw-r--r--. 1 dirac dirac     352 Jul 12 17:48 std.out
+-rw-r--r--. 1 dirac dirac     167 Jul  7 17:24 tmsg.py
+-rw-r--r--. 1 dirac dirac    3081 Jul 10 15:30 uploadData.py
+-rw-r--r--. 1 dirac dirac    2938 Jul 12 17:55 uploadData.pyc
+ 
+==================== 2015-07-12 17:56:12 Job Done ====================
+ <<<<<<<<<< runtimeScript.py Standard Error >>>>>>>>>>
+
+Traceback (most recent call last):
+  File "setJobStatus.py", line 13, in <module>
+    message = sys.argv[3]
+IndexError: list index out of range
+ 

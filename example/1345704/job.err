@@ -1,0 +1,8 @@
+- Upload to LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio on SE IHEP-STORM failed, try again
+- Upload to LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio on SE IHEP-STORM failed, try again
+- Upload to LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio on SE IHEP-STORM failed, try again
+- Upload to LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio on SE IHEP-STORM failed, try again
+- Upload to LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio on SE IHEP-STORM failed, try again
+Failed type 1 uploading LFN:/test/cepc/0702/sim/Psze_l0nunu.e0.p0.00005_sim.slcio to IHEP-STORM. Retry 5
+Upload Data Error:
+{'Message': 'putAndRegister: Failed to put file to Storage Element.  SRM2Storage.__create_gfal_object: Failed to perform gfal_init.[GFAL][gfal_init][EINVAL] Invalid request: When BDII checks are disabled, you must provide full endpoint\n', 'OK': False}

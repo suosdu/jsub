@@ -1,0 +1,4 @@
+2015-07-10 10:52:03 UTC dirac-jobexec   INFO: JobID: 1345704 
+2015-07-10 10:52:03 UTC dirac-jobexec   INFO: DIRAC JobID 1345704 is running at site CLUSTER.YANT.cn 
+Executing StepInstance RunScriptStep1 of type ScriptStep1 ['ScriptStep1']
+2015-07-10 10:52:03 UTC dirac-jobexec/Script   INFO: Command is: /tmp/DIRAC_zVn7onpilot/1345704/runtimeScript.py 

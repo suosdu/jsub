@@ -1,3 +1,4 @@
+#coding:utf-8
 '''
 Created on 2015-05-19 22:23:57
 
@@ -8,20 +9,6 @@ from subprocess import call
 
 cvmfsPath = sys.argv[1]
 jobID = sys.argv[2]
-
-'''version Zhao'''
-try:
-    os.listdir(cvmfsPath)
-except OSError as err:
-    try:
-        with open('job.err', 'a') as errFile:
-            print >> errFile, 'List directory "%s" failed: %s' % (sys.argv[1],str(err))
-    except IOError as e:
-        print 'IOError: ',str(e)
-
-if not os.path.isdir(cvmfsPath):
-    call(['python','setJobStatus.py',jobID,'CEPC_script','cvmfs not found'])
-    sys.exit(11)
 #--------------------------------------------------------------------------   
 '''version Yan'''
 call(['python','tmsg.py','Check cvmfs'])

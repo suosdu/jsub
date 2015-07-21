@@ -46,7 +46,13 @@ class CepcRecParser(OptionsParser):
             element.text = inputFilename + '_sim.slcio'
         for element in template.findall('processor[@name="MyLCIOOutputProcessor"]/parameter[@name="LCIOOutputFile"]'):
             element.text = inputFilename + '_rec.slcio'
-        template.write(os.path.join(subdir, 'reco.xml'))  
+  #     template.write(os.path.join(subdir, 'reco.xml'))  
+        destination = os.path.join(subdir, 'reco.xml')
+        try:
+            with open(destination,'w'):
+                template.write(destination)
+        except IOError as err:
+            print "InitXml:",str(err)
          
     def parse(self):
         print 'Enter CepcRecParser.parse()'
@@ -61,4 +67,4 @@ class CepcRecParser(OptionsParser):
             print 'inputFileName not specified'
         else:
             self.__generatePandoras(kwargs['masterDir'])#待改，只需执行一次
-            self.__generateRecoXml(kwargs['subDir'], self.recoTemplate, kwargs['inputFileName'])
+            self.__generateRecoXml(kwargs['subDir'], self.recoTemplate, os.path.splitext(kwargs['inputFileName'])[0])

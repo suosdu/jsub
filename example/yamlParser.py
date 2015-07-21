@@ -4,7 +4,12 @@ Created on 2015-05-27 12:03:18
 
 @author: suo
 '''
-import sys,yaml,copy
+import sys,yaml,copy,pprint
+from DIRAC.Core.Base import Script
+Script.parseCommandLine( ignoreErrors = False )
+
+sys.path.append('/home/cc/suob/jsub/jsub')
+#sys.path.append('/home/cc/suob/jsub/e')
 from __builtin__ import __import__
 from utility.DataRegister import registerInputData
 '''1.读取yaml文件'''
@@ -116,7 +121,7 @@ try:
 except Exception as e:
     print 'Exception: ',str(e)
 backend = getattr(module, backendName)(backendDict = x['Backend'])
-
+print backend.getDFCprefix()
 '''''''''''''''获取jobFactory'''''''''''
 jobfactoryName = '%sJobFactory' % (x['Experiment']['Name'][0].upper()+x['Experiment']['Name'][1:])
 try:
@@ -125,27 +130,34 @@ try:
 except Exception as e:
     print 'Exception: ',str(e)
 jobFactory = getattr(module, jobfactoryName)()
-
-
-'''...ooo0OOO0ooo0OOO0ooo0OOO0ooo...'''
-subjobs = jobFactory.createSubJobs(splitter, x['Experiment']['Name'])
  
 for step in sorted_jobSteps:
     print step.__dict__
-    step.optionsParser.parse()#每一个step，解析options文件   
+    step.optionsParser.parse()#每一个step，解析options文件
     stepNumList.append(step.number)
-   
+
+subjobs = jobFactory.createSubJobs(x['Experiment']['Name'],splitter,backend,stepNumList)
+workflow.setJobSteps(sorted_jobSteps)
+workflow.setStepNumList(stepNumList)
+
+
 for subjob in subjobs:
-    '''数据注册'''
+    try:
+        with open(os.path.join(subjob['subDir'],'jobParam')) as f:
+            pprint.pprint(subjob,f)
+    except IOError as e:
+        print 'IOError',str(e)
     registerInputData(subjob['inputFilePath'],subjob['inputFileSize'])
-    '''生成option files'''
     for step in sorted_jobSteps:
         step.optionsParser.generateOpts(**subjob)#每一个step,生成opts文件
-    '''生成runtime script'''
-    workflow.updateForSubjob(jobPara = subjob)
-    workflow.generateScript()  
-     
-    '''作业提交'''
-    backend.submit(subjob)
-    
-  
+    workflow.updateForSubjob(jobParam = subjob)
+    workflow.generateScript()
+    result = backend.submit(subjob)
+
+    print subjob['jobName']
+'''
+    if result['OK']:
+        print 'Job %s submitted successfully. ID = %d' %(subjob['jobName'],result['Value'])
+    else:
+        print 'Job %s submitted failed' %subjob['jobName']
+'''

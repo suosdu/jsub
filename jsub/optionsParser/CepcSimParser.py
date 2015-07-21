@@ -87,11 +87,11 @@ class CepcSimParser(OptionsParser):
             print 'subDir not specified'
         elif 'eventNum' not in kwargs:
             print 'eventNum not specified'
-        elif 'inputFilename' not in kwargs:
-            print 'inputFilename not specified'
+        elif 'inputFileName' not in kwargs:
+            print 'inputFileName not specified'
         else:
-            self.__generateEventMacro(kwargs['subDir'], self.eventTemp, kwargs['eventNum'], kwargs['inputFilename'])
-            self.__generateSimuMacro(kwargs['subDir'], self.simuTemp, os.path.splitext(kwargs['inputFilename'])[0])
+            self.__generateEventMacro(kwargs['subDir'], self.eventTemp, kwargs['eventNum'], kwargs['inputFileName'])
+            self.__generateSimuMacro(kwargs['subDir'], self.simuTemp, os.path.splitext(kwargs['inputFileName'])[0])
         
 if __name__ == '__main__':
     parser = CepcSimParser(['/home/suo/template/simu.macro','/home/suo/template/event.macro'])

@@ -3,20 +3,27 @@ Created on 2015-06-30 22:26:30
 
 @author: suo
 '''
+from DIRAC.Core.Base import Script
+print "hello00"
+#Script.initialize()
+Script.parseCommandLine( ignoreErrors = False )
+print "hello"
 from backend.Backend import Backend
 from DIRAC.Interfaces.API.Dirac import Dirac as GridDirac
 from DIRAC.Interfaces.API.Job import Job
 from DIRAC.Core.Security.ProxyInfo import getProxyInfo
-
+from utility.ResolvePath import trimJoinPathElement
 class Dirac(Backend):
     def __init__(self, backendDict = None):
         if backendDict!=None:
             self.site = backendDict['Site']
             self.jobGroup = backendDict['JobGroup']
             self.outputSE = backendDict['OutputSe']
-            self.outputDir = backendDict['OutputDir']
+            self.outputDir = trimJoinPathElement(backendDict['OutputDir'])
             if 'OutputPath' in backendDict:
                 self.outputPath = backendDict['OutputPath']
+            else:
+                self.outputPath = ''
         else:
             self.site = ''
             self.jobGroup = ''
@@ -27,7 +34,7 @@ class Dirac(Backend):
     def getDFCprefix(self):
         username = getProxyInfo()['Value']['username']
         initial = username[0]
-        prefix = '/cepc/user/' + initial + '/' + username + '/' 
+        prefix = '/cepc/user/' + initial + '/' + username# + '/' 
         return prefix
     
     def submit(self, param):        
@@ -63,3 +70,5 @@ class Dirac(Backend):
         
     def setOutputPath(self,path):
         self.outputPath = path
+
+

@@ -42,7 +42,7 @@ class SplitterByFile(Splitter):
             sys.exit(1)
         self.inputData = value
          
-    def resolveInputFileList(self,filename,prefix = '/cefs/',postfix = '.stehep'):
+    def resolveInputFileList(self,filename,prefix = '/cefs/',postfix = '.stdhep'):
         '''如果输入是一个文件的列表, 读取检查, 返回元组列表 [(),(),()] '''
 #         if not os.path.isfile(filename):
 #             print 'Error: %s is not a file'% filename
@@ -55,7 +55,7 @@ class SplitterByFile(Splitter):
                     line = eachline.strip()
                     if line == '':
                         pass
-                    elif not line.startwith(prefix):
+                    elif not line.startswith(prefix):
                         print 'WARNNING: this line: %s not in %s, ignored.' % (line, prefix)
                     elif not line[-len(postfix):].lower() == postfix:
                         print 'WARNNING: this line: %s doesn\'t end with %s, ignored.' % (line, postfix)              
@@ -63,6 +63,7 @@ class SplitterByFile(Splitter):
                         print 'WARNNING: this line: %s is not a file' % line
                     elif line not in fileList:
                         fileList.append(line)
+                        #print line
                         aDict = {'inputFilePath':line,
                                  'inputFileSize':os.path.getsize(line),
                                  'inputFileName':os.path.basename(line),
@@ -74,6 +75,7 @@ class SplitterByFile(Splitter):
         if len(inputDataList)==0:
             print 'No %s file found in %s' % (postfix,filename)
             sys.exit(1)
+        #print inputDataList
         return inputDataList
     
     def resolveInputDir(self,inputdir,postfix = '.stdhep'):

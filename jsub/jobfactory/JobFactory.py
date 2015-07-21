@@ -1,9 +1,10 @@
+#coding:utf-8
 '''
 Created on 2015-07-03 14:40:28
 
 @author: suo
 '''
-import os
+import os,copy
 from utility.Workspace import createMasterRepoDir
 from utility.UserConf import repo_path
 
@@ -11,9 +12,8 @@ class JobFactory(object):
     
     def __init__(self):
         self.properties = {'inputSandbox':{},'outputSandbox':{}}
-        self.stepNumList = []
     
-    def createSubJobs(self,experiment,splitter,backend):
+    def createSubJobs(self,experiment,splitter,backend,stepNumList):
         masterDir = createMasterRepoDir(repo_path)
         count = 1
         subjobs = []
@@ -23,27 +23,35 @@ class JobFactory(object):
                     'outputData':[],
                     'masterDir': masterDir}
         #outputsandbox可以统一处理
-        if '1' in self.stepNumList:
+        if '1' in stepNumList:
             jobParam['outputSandbox'].extend(self.properties['outputSandbox']['sim'])
-        if '2' in self.stepNumList:
+        if '2' in stepNumList:
             jobParam['outputSandbox'].extend(self.properties['outputSandbox']['rec'])
-#         if '3' in self.stepNumList:
+#         if '3' in stepNumList:
 #             jobParam['outputSandbox'].extend(self.properties['outputSandbox']['ana'])
-            
-        for each in splitter.split():
+
+        splitResult = splitter.split()
+        totalJobs = len(splitResult)
+        jobParam['totalJobs'] = totalJobs 
+           
+        for each in splitResult:
+            currentjobParam = copy.deepcopy(jobParam)
             for key in each:
-                jobParam[key] = each[key]
-            jobParam['jobScript'] = os.path.join(jobParam['subDir'],'runtimeScript.py')
-            jobParam['inputSandbox'].append(jobParam['jobScript'])
-            jobParam['jobName'] = "%s_v1_%s_%s"%(experiment,masterDir,str(count))
-            jobParam['subDir'] = os.path.join(masterDir,str(count))
+                currentjobParam[key] = each[key]
+
+            currentjobParam['subDir'] = os.path.join(masterDir,str(count))
+            os.mkdir(currentjobParam['subDir'])
+
+            currentjobParam['jobName'] = "%s_v1_%s_%s"%(experiment,os.path.basename(masterDir),str(count))
+            currentjobParam['jobScript'] = os.path.join(currentjobParam['subDir'],'runtimeScript.py')
+            currentjobParam['inputSandbox'].append(currentjobParam['jobScript'])
+
+            self.setSpecialParam(currentjobParam, backend, stepNumList)
             
-            self.setSpecialParam(jobParam, backend)
-            
-            subjobs.append(jobParam)
+            subjobs.append(currentjobParam)
             count+=1
 
         return subjobs
     
-    def setSpecialParam(self,jobParam):
+    def setSpecialParam(self,jobParam,backend,stepNumList):
         raise NotImplementedError           

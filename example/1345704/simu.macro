@@ -1,0 +1,13 @@
+/Mokka/init/BatchMode true
+/Mokka/init/printLevel 0
+/Mokka/init/detectorModel CEPC_v1
+/Mokka/init/EditGeometry/rmSubDetector SServices_O2_v00
+/Mokka/init/dbHost 202.114.78.211
+/Mokka/init/user consult
+/Mokka/init/dbPasswd consult
+/Mokka/init/lcioFilename Psze_l0nunu.e0.p0.00005_sim.slcio
+/Mokka/init/initialMacroFile event.macro
+/Mokka/init/lcioDetailedShowerMode true
+/Mokka/init/userInitBool WriteCompleteHepEvt true
+/Mokka/init/lcioWriteMode WRITE_NEW
+/Mokka/init/lcioStoreCalHitPosition true

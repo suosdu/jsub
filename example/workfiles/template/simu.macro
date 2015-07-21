@@ -1,0 +1,21 @@
+
+/Mokka/init/BatchMode true
+/Mokka/init/printLevel 0
+
+/Mokka/init/detectorModel CEPC_v1
+/Mokka/init/EditGeometry/rmSubDetector SServices_O2_v00
+
+/Mokka/init/dbHost 202.114.78.211 
+/Mokka/init/user consult
+/Mokka/init/dbPasswd consult
+
+#/Mokka/init/globalModelParameter LStar_zbegin 2200
+#/Mokka/init/globalModelParameter LStar_zbegin 2500
+
+/Mokka/init/lcioFilename     E250-CDR_ws.Pz_h0bq.eU.pU.0023_SIM.slcio
+/Mokka/init/initialMacroFile event.macro 
+
+/Mokka/init/lcioDetailedShowerMode true
+/Mokka/init/userInitBool WriteCompleteHepEvt true
+/Mokka/init/lcioWriteMode WRITE_NEW
+/Mokka/init/lcioStoreCalHitPosition true

@@ -1,0 +1,8 @@
+2015-07-12 10:07:02 UTC dirac-jobexec   INFO: JobID: 1346182 
+2015-07-12 10:07:02 UTC dirac-jobexec   INFO: DIRAC JobID 1346182 is running at site CLUSTER.YANT.cn 
+Executing StepInstance RunScriptStep1 of type ScriptStep1 ['ScriptStep1']
+2015-07-12 10:07:03 UTC dirac-jobexec/Script   INFO: Command is: /tmp/DIRAC_QsJgWTpilot/1346182/runtimeScript.py 
+2015-07-12 10:16:45 UTC dirac-jobexec/Script   INFO: runtimeScript.py execution completed with status 0 
+2015-07-12 10:16:45 UTC dirac-jobexec/Script   INFO: Output written to script.log, execution complete. 
+2015-07-12 10:16:45 UTC dirac-jobexec/Script   INFO: runtimeScript.py (Unknown Unknown) Successful 
+2015-07-12 10:16:45 UTC dirac-jobexec/Script   INFO: ===== Terminating <class 'DIRAC.Workflow.Modules.Script.Script'> =====  

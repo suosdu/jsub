@@ -1,0 +1,1877 @@
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinReco/v01-09/lib/libMarlinReco.so.1.9.0 (libMarlinReco.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/PandoraAnalysis/v00-05/lib/libPandoraAnalysis.so.0.5.0 (libPandoraAnalysis.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinPandora/v00-11/lib/libMarlinPandora.so.0.11.0 (libMarlinPandora.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/LCFIVertex/v00-06-01/lib/libLCFIVertex.so.0.6.1 (libLCFIVertex.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/CEDViewer/v01-07-02/lib/libCEDViewer.so.1.7.2 (libCEDViewer.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/Overlay/v00-13/lib/libOverlay.so.0.13.0 (libOverlay.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/FastJetClustering/v00-02/lib/libFastJetClustering.so.0.2.0 (libFastJetClustering.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinFastJet/v00-02/lib/libMarlinFastJet.so.0.2.0 (libMarlinFastJet.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/LCTuple/v01-03/lib/libLCTuple.so.1.3.0 (libLCTuple.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinKinfit/v00-01-02/lib/libMarlinKinfit.so.0.1.2 (libMarlinKinfit.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinTrkProcessors/v01-10/lib/libMarlinTrkProcessors.so.1.10.0 (libMarlinTrkProcessors.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/Clupatra/v00-10/lib/libClupatra.so.0.10.0 (libClupatra.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/LCFIPlus/v00-05-02/lib/libLCFIPlus.so.0.5.2 (libLCFIPlus.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/ForwardTracking/v01-07/lib/libForwardTracking.so.1.7.0 (libForwardTracking.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/MarlinTPC/v00-16/lib/libMarlinTPC.so.0.15.0 (libMarlinTPC.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/Garlic/v2.10.1/lib/libGarlic.so.2.1.1 (libGarlic.so)-->
+<!-- Loading shared library : /cvmfs/cepc.ihep.ac.cn/cepcsoft/x64_SL6/xuyin/ilcsoft/v01-17-05/Arbor/150522/lib/libRanger.so.6.1.0 (libRanger.so)-->
+
+[ MESSAGE "Marlin"]  ---- instantiated  GEAR from file  GearOutput.xml
+[ MESSAGE "Marlin"]  ----------------------------------------------------- 
+[ MESSAGE "Marlin"]               GearMgr :                                
+[ MESSAGE "Marlin"]  ----------------------------------------------------- 
+[ MESSAGE "Marlin"]    ----  DetectorName   ----   
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]          CEPC_v1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    -----------   BField   ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]        field vector at origin :   Bx = 0 , By = 0 , Bz = 3.5 [Tesla] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  VXD    ---- 
+[ MESSAGE "Marlin"]      --- ZPlanarParameters: 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   type :  HYBRID 
+[ MESSAGE "Marlin"]  Shell innerR : 65 outerR : 65.4939
+[ MESSAGE "Marlin"]        length : 145 gap 0
+[ MESSAGE "Marlin"]  Layers : 6
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |       ladder:                        |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    d    |    w    |    l    |   t    |    d    |    w    |    l    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  10  |  16.00  |  11.50  |  62.50  |  1.00  |  15.95  |  11.00  |  62.50  |  0.05  |
+[ MESSAGE "Marlin"]   |  10  |  17.00  |  11.50  |  62.50  |  1.00  |  18.00  |  11.00  |  62.50  |  0.05  |
+[ MESSAGE "Marlin"]   |  11  |  37.00  |  22.50  |  125.00  |  1.00  |  36.95  |  22.00  |  125.00  |  0.05  |
+[ MESSAGE "Marlin"]   |  11  |  38.00  |  22.50  |  125.00  |  1.00  |  39.00  |  22.00  |  125.00  |  0.05  |
+[ MESSAGE "Marlin"]   |  17  |  58.00  |  22.50  |  125.00  |  1.00  |  57.95  |  22.00  |  125.00  |  0.05  |
+[ MESSAGE "Marlin"]   |  17  |  59.00  |  22.50  |  125.00  |  1.00  |  60.00  |  22.00  |  125.00  |  0.05  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    -----------   FTDParameters  ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_angle_deg 	 5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_length_mm 	 250
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_pitch_mm 	 0.01
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_width_mm 	 0.001
+[ MESSAGE "Marlin"]  Layers : 5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |         support:                      |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    x    |    X    |    y    |   t    |    x    |    X    |    y    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  16  |  29.21  |  72.00  |  107.57  |  1.00  |  29.21  |  72.00  |  107.57  |  0.02  |
+[ MESSAGE "Marlin"]   |  16  |  32.82  |  72.00  |  98.48  |  1.00  |  32.82  |  72.00  |  98.48  |  0.02  |
+[ MESSAGE "Marlin"]   |  16  |  32.56  |  122.49  |  226.07  |  2.00  |  32.56  |  122.49  |  226.07  |  0.20  |
+[ MESSAGE "Marlin"]   |  16  |  33.53  |  122.49  |  223.62  |  2.00  |  33.53  |  122.49  |  223.62  |  0.20  |
+[ MESSAGE "Marlin"]   |  16  |  38.87  |  122.49  |  210.20  |  2.00  |  38.87  |  122.49  |  210.20  |  0.20  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  SIT    ---- 
+[ MESSAGE "Marlin"]      --- ZPlanarParameters: 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    sensor_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_angle_deg 	 7
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_pitch_mm 	 0.05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_width_mm 	 0.0125
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [IntVec]    n_sensors_per_ladder 	 8 , 8 , 14 , 14 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   type :  CCD 
+[ MESSAGE "Marlin"]  Shell innerR : 0 outerR : 0
+[ MESSAGE "Marlin"]        length : 0 gap 0
+[ MESSAGE "Marlin"]  Layers : 4
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |       ladder:                        |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    d    |    w    |    l    |   t    |    d    |    w    |    l    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  10  |  153.10  |  99.16  |  368.00  |  1.00  |  152.90  |  99.16  |  368.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  10  |  154.40  |  100.14  |  368.00  |  1.00  |  155.40  |  100.14  |  368.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  19  |  300.10  |  99.89  |  644.00  |  1.00  |  299.90  |  99.89  |  644.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  19  |  301.40  |  100.39  |  644.00  |  1.00  |  302.40  |  100.39  |  644.00  |  0.20  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  SET    ---- 
+[ MESSAGE "Marlin"]      --- ZPlanarParameters: 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    sensor_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_angle_deg 	 7
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_pitch_mm 	 0.05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_width_mm 	 0.0125
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [IntVec]    n_sensors_per_ladder 	 50 , 50 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   type :  CCD 
+[ MESSAGE "Marlin"]  Shell innerR : 0 outerR : 0
+[ MESSAGE "Marlin"]        length : 0 gap 0
+[ MESSAGE "Marlin"]  Layers : 2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |       ladder:                        |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    d    |    w    |    l    |   t    |    d    |    w    |    l    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  24  |  1811.10  |  476.62  |  2300.00  |  1.00  |  1810.90  |  476.62  |  2300.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  24  |  1812.40  |  477.01  |  2300.00  |  1.00  |  1813.40  |  477.01  |  2300.00  |  0.20  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]      --- ZPlanarParameters: 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    sensor_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_angle_deg 	 7
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_pitch_mm 	 0.05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_width_mm 	 0.0125
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [IntVec]    n_sensors_per_ladder 	 8 , 8 , 14 , 14 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   type :  CCD 
+[ MESSAGE "Marlin"]  Shell innerR : 0 outerR : 0
+[ MESSAGE "Marlin"]        length : 0 gap 0
+[ MESSAGE "Marlin"]  Layers : 4
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |       ladder:                        |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    d    |    w    |    l    |   t    |    d    |    w    |    l    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  10  |  153.10  |  99.16  |  368.00  |  1.00  |  152.90  |  99.16  |  368.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  10  |  154.40  |  100.14  |  368.00  |  1.00  |  155.40  |  100.14  |  368.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  19  |  300.10  |  99.89  |  644.00  |  1.00  |  299.90  |  99.89  |  644.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  19  |  301.40  |  100.39  |  644.00  |  1.00  |  302.40  |  100.39  |  644.00  |  0.20  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]      --- ZPlanarParameters: 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    sensor_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_angle_deg 	 7
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_length_mm 	 92
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_pitch_mm 	 0.05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    strip_width_mm 	 0.0125
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [IntVec]    n_sensors_per_ladder 	 50 , 50 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   type :  CCD 
+[ MESSAGE "Marlin"]  Shell innerR : 0 outerR : 0
+[ MESSAGE "Marlin"]        length : 0 gap 0
+[ MESSAGE "Marlin"]  Layers : 2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  layer parameters (note: ladder length (l) are half lengths ! )
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |      |       ladder:                        |       sensitive part:                |
+[ MESSAGE "Marlin"]   |  #   |    d    |    w    |    l    |   t    |    d    |    w    |    l    |    t   | 
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"]   |  24  |  1811.10  |  476.62  |  2300.00  |  1.00  |  1810.90  |  476.62  |  2300.00  |  0.20  |
+[ MESSAGE "Marlin"]   |  24  |  1812.40  |  477.01  |  2300.00  |  1.00  |  1813.40  |  477.01  |  2300.00  |  0.20  |
+[ MESSAGE "Marlin"]   |------------------------------------------------------------------------------------|
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    -----------   TPCParameters  ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCGasProperties_RadLen 	 115521
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCGasProperties_dEdx 	 2.66818e-07
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCInnerWallProperties_RadLen 	 4897.36
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCInnerWallProperties_dEdx 	 1.33702e-05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCOuterWallProperties_RadLen 	 11577.1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCOuterWallProperties_dEdx 	 5.70058e-06
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCWallProperties_RadLen 	 4897.36
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPCWallProperties_dEdx 	 1.33702e-05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    tpcInnerRadius 	 329
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    tpcInnerWallThickness 	 25
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    tpcOuterRadius 	 1808
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    tpcOuterWallThickness 	 60
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    tpcZAnode 	 4600
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   maxDriftLength :      2225
+[ MESSAGE "Marlin"]   coordinateType :      polar
+[ MESSAGE "Marlin"]   Number of modules :   1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]      -----------   TPCModule  ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   Readout frequency :   0
+[ MESSAGE "Marlin"]   Type :                 polar
+[ MESSAGE "Marlin"]   Number of pads :      1464499
+[ MESSAGE "Marlin"]   Number of Rows :      222
+[ MESSAGE "Marlin"]   Offset :              0  ;  0 no z Position set 
+[ MESSAGE "Marlin"]   Angle :               0
+[ MESSAGE "Marlin"]          extent (global):    [384,1716,0,6.28319]
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Ecal barrel    ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  barrel  
+[ MESSAGE "Marlin"]    symmetry order:  8
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      1847.42
+[ MESSAGE "Marlin"]          rMax:      2019.62
+[ MESSAGE "Marlin"]          zMin:      0
+[ MESSAGE "Marlin"]          zMax:      2350
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 29
+[ MESSAGE "Marlin"]        id: 0 thickness: 5.25 absorber thickness: 2.1 distance: 1847.42 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 19 thickness: 6.3 absorber thickness: 2.1 distance: 1947.17 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 20 thickness: 7.35 absorber thickness: 4.2 distance: 1953.47 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 28 thickness: 7.35 absorber thickness: 4.2 distance: 2012.27 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Ecal endcap   ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      400
+[ MESSAGE "Marlin"]          rMax:      2088.8
+[ MESSAGE "Marlin"]          zMin:      2450
+[ MESSAGE "Marlin"]          zMax:      2622.2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 29
+[ MESSAGE "Marlin"]        id: 0 thickness: 5.25 absorber thickness: 2.1 distance: 2450 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 19 thickness: 6.3 absorber thickness: 2.1 distance: 2549.75 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 20 thickness: 7.35 absorber thickness: 4.2 distance: 2556.05 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 28 thickness: 7.35 absorber thickness: 4.2 distance: 2614.85 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Ecal plug   ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      226.8
+[ MESSAGE "Marlin"]          rMax:      400
+[ MESSAGE "Marlin"]          zMin:      2450
+[ MESSAGE "Marlin"]          zMax:      2622.2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 29
+[ MESSAGE "Marlin"]        id: 0 thickness: 5.25 absorber thickness: 2.1 distance: 2450 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 19 thickness: 6.3 absorber thickness: 2.1 distance: 2549.75 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 20 thickness: 7.35 absorber thickness: 4.2 distance: 2556.05 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"]        id: 28 thickness: 7.35 absorber thickness: 4.2 distance: 2614.85 cellsize-0: 5.08333 cellsize-1: 5.08333
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Yoke barrel    ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  barrel  
+[ MESSAGE "Marlin"]    symmetry order:  12
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      4415.03
+[ MESSAGE "Marlin"]          rMax:      7655.03
+[ MESSAGE "Marlin"]          zMin:      0
+[ MESSAGE "Marlin"]          zMax:      4072
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 14
+[ MESSAGE "Marlin"]        id: 0 thickness: 40 absorber thickness: 0 distance: 4415.03 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"]        id: 1 thickness: 140 absorber thickness: 100 distance: 4455.03 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"]        id: 11 thickness: 600 absorber thickness: 560 distance: 5855.03 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"]        id: 13 thickness: 600 absorber thickness: 560 distance: 7055.03 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Yoke endcap   ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      300
+[ MESSAGE "Marlin"]          rMax:      7656.03
+[ MESSAGE "Marlin"]          zMin:      4072
+[ MESSAGE "Marlin"]          zMax:      6672
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 12
+[ MESSAGE "Marlin"]        id: 0 thickness: 140 absorber thickness: 100 distance: 4072 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"]        id: 10 thickness: 600 absorber thickness: 560 distance: 5472 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"]        id: 11 thickness: 600 absorber thickness: 560 distance: 6072 cellsize-0: 30 cellsize-1: 30
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Yoke plug   ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    YokePlugThickness 	 49.47
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      300
+[ MESSAGE "Marlin"]          rMax:      3067.72
+[ MESSAGE "Marlin"]          zMin:      4022.53
+[ MESSAGE "Marlin"]          zMax:      4022.53
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Hcal barrel    ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [int]       Hcal_barrel_number_modules 	 5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [int]       N_cells_z 	 88
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    FrameWidth 	 1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_lateral_structure_thickness 	 10
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_modules_gap 	 2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_outer_radius 	 3385.53
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_virtual_cell_size 	 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    InnerOctoSize 	 1704.9
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    RPC_PadSeparation 	 0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    TPC_Ecal_Hcal_barrel_halfZ 	 2350
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  barrel  
+[ MESSAGE "Marlin"]    symmetry order:  8
+[ MESSAGE "Marlin"]    phi0:            1.5708
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      2058
+[ MESSAGE "Marlin"]          rMax:      3341.04
+[ MESSAGE "Marlin"]          zMin:      0
+[ MESSAGE "Marlin"]          zMax:      2350
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 48
+[ MESSAGE "Marlin"]        id: 0 thickness: 26.73 absorber thickness: 20 distance: 2058 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"]        id: 47 thickness: 26.73 absorber thickness: 20 distance: 3314.31 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Hcal endcap    ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    FrameWidth 	 0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_virtual_cell_size 	 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      350
+[ MESSAGE "Marlin"]          rMax:      3385.53
+[ MESSAGE "Marlin"]          zMin:      2650
+[ MESSAGE "Marlin"]          zMax:      3933.04
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 48
+[ MESSAGE "Marlin"]        id: 0 thickness: 26.73 absorber thickness: 20 distance: 2650 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"]        id: 47 thickness: 26.73 absorber thickness: 20 distance: 3906.31 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Hcal ring    ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    FrameWidth 	 0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Hcal_virtual_cell_size 	 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  2
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      2138.8
+[ MESSAGE "Marlin"]          rMax:      3385.53
+[ MESSAGE "Marlin"]          zMin:      2450
+[ MESSAGE "Marlin"]          zMax:      2610.38
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 6
+[ MESSAGE "Marlin"]        id: 0 thickness: 26.73 absorber thickness: 20 distance: 2450 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"]        id: 5 thickness: 26.73 absorber thickness: 20 distance: 2583.65 cellsize-0: 10.408 cellsize-1: 10.408
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ----  Lcal   ---- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    beam_crossing_angle 	 0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]   calorimeter type:  endcap  
+[ MESSAGE "Marlin"]    symmetry order:  1
+[ MESSAGE "Marlin"]    phi0:            0
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    dimensions :  
+[ MESSAGE "Marlin"]          rMin:      63.3166
+[ MESSAGE "Marlin"]          rMax:      170.8
+[ MESSAGE "Marlin"]          zMin:      1146.9
+[ MESSAGE "Marlin"]          zMax:      1275.6
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    layers    :    #total 30
+[ MESSAGE "Marlin"]        id: 0 thickness: 4.29 absorber thickness: 3.5 distance: 1146.9 cellsize-0: 1.67943 cellsize-1: 0.1309
+[ MESSAGE "Marlin"]        id: 29 thickness: 4.29 absorber thickness: 3.5 distance: 1271.31 cellsize-0: 1.67943 cellsize-1: 0.1309
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    parameter sections (detectors) :  
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ------  name : BeamPipe ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeamPipeHalfZ 	 4225
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeamPipeProperties_RadLen 	 352.76
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeamPipeProperties_dEdx 	 0.00029418
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeamPipeRadius 	 14.5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeamPipeThickness 	 0.5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [DoubleVec] RInner 	 14.5 , 14.5 , 23 , 23 , 23 , 23 , 31.476 , 53.706 , 86.274 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [DoubleVec] ROuter 	 15 , 15 , 24 , 23.67 , 25 , 25.007 , 33.483 , 56.475 , 78.9243 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [DoubleVec] Z 	 0 , 80 , 150 , 175 , 220 , 230 , 535.8 , 809.5 , 1080 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ------  name : CoilParameters ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_c_modules_half_z 	 1224
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_c_modules_inner_radius 	 3590.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_c_modules_outer_radius 	 3975.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_half_z 	 3872
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_inner_cyl_half_z 	 3872
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_inner_cyl_inner_radius 	 3415.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_inner_cyl_outer_radius 	 4205.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_inner_radius 	 3415.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_mandrel_half_z 	 3675
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_mandrel_inner_radius 	 3975.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_mandrel_outer_radius 	 4050.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_modules_half_z 	 796
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_modules_inner_radius 	 3590.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_modules_outer_radius 	 3975.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_outer_cyl_half_z 	 3872
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_outer_cyl_inner_radius 	 4135.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_outer_cyl_outer_radius 	 4165.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_outer_radius 	 4165.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint1_inner_radius 	 3505.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint1_outer_radius 	 3515.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint1_zposend 	 3972
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint1_zposin 	 3772
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint2_inner_radius 	 3520.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint2_outer_radius 	 3530.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint2_zposend 	 3972
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint2_zposin 	 3772
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint3_inner_radius 	 4075.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint3_outer_radius 	 4085.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint3_zposend 	 3972
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint3_zposin 	 3772
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint4_inner_radius 	 4060.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint4_outer_radius 	 4070.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint4_zposend 	 3972
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_scint4_zposin 	 3772
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_l_half_z 	 25
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_l_inner_radius 	 3455.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_l_outer_radius 	 4135.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_r_half_z 	 25
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_r_inner_radius 	 3455.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Coil_cryostat_side_r_outer_radius 	 4135.03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_c_modules 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_inner_cyl 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_mandrel 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_modules 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_outer_cyl 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_scint1 	 polystyrene
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_scint2 	 polystyrene
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_scint3 	 polystyrene
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_scint4 	 polystyrene
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_side_l 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Coil_material_side_r 	 aluminium
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ------  name : MokkaParameters ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Ecal_endcap_outer_radius 	 2088.8
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Ecal_endcap_plug_rmin 	 226.8
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Ecal_endcap_zmax 	 2635
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Ecal_endcap_zmin 	 2450
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Ecal_outer_radius 	 2028
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Hcal_R_max 	 3385.53
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Hcal_endcap_zmin 	 2650
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Lcal_z_begin 	 1146.9
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Lcal_z_thickness 	 128.1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    MokkaModel 	 CEPC_v1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    MokkaVersion 	 void
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    SIT1_Half_Length_Z 	 368
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    SIT1_Radius 	 152.9
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    SIT2_Half_Length_Z 	 644
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    SIT2_Radius 	 299.9
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TPC_Ecal_Hcal_barrel_halfZ 	 2350
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterBulge_end_radius 	 78.9243
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterBulge_end_z 	 1080
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterTube_end_radius 	 25
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterTube_end_z 	 230
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterTube_start_radius 	 25
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    TUBE_IPOuterTube_start_z 	 220
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Yoke_Z_start_endcaps 	 4072
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    Yoke_barrel_inner_radius 	 4415.02978515625
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    calorimeter_region_rmax 	 3385.53
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    calorimeter_region_zmax 	 3977.53
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    tracker_region_rmax 	 1842.9
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [string]    tracker_region_zmax 	 2350
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]    ------  name : VXDInfra ------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    ActiveLayerProperties_dEdx 	 0.000387016
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeSupportEndplateThickness 	 2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    BeSupport_dEdx 	 0.00029418
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    CryostatAlHalfZ 	 176.6
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    CryostatAlInnerR 	 24.2
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    CryostatAlRadius 	 100
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    CryostatAlThickness 	 0.5
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    CryostatAlZEndCap 	 176.85
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Cryostat_RadLen 	 88.9632
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    Cryostat_dEdx 	 0.000435019
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    ElectronicEndLength 	 10
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    ElectronicEndThickness 	 0.1
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    StripLineBeamPipeRadius 	 24.3
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    VXDEndPlateInnerRadius 	 30
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [double]    VXDSupport_dEdx 	 4.81863e-05
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [DoubleVec] LadderGaps 	 0 , 0 , 0 , 0 , 0 , 0 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]     [DoubleVec] StripLineFinalZ 	 150 , 150 , 150 , 150 , 150 , 150 , 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  ------------------------------------------------------------------ 
+[ MESSAGE "Marlin"]    materials :  
+[ MESSAGE "Marlin"]     VXDSupportMaterial, A= +2.07586516e+01, Z= +1.03938312e+01, density [kg/m3]= +2.76590000e+02, radiation length [mm]= +1.01426242e+03, interaction length [mm]= +3.34138806e+03
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  ------------------------------------------------------------------ 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "MyAIDAProcessor"] 
+[ MESSAGE "MyAIDAProcessor"] ---- MyAIDAProcessor -  parameters: 
+[ MESSAGE "MyAIDAProcessor"] 	Compress:  1
+[ MESSAGE "MyAIDAProcessor"] 	FileName:  bbudsc_3evt_stdreco_0
+[ MESSAGE "MyAIDAProcessor"] 	FileType:  root
+[ MESSAGE "MyAIDAProcessor"] -------------------------------------------------
+[ VERBOSE "MyAIDAProcessor"] ---------------------------------- R A I D A ----------------------------------
+[ VERBOSE "MyAIDAProcessor"] ROOT Implementation of the Abstract Interfaces for Data Analysis (AIDA v3.2.1)
+[ VERBOSE "MyAIDAProcessor"] 
+[ VERBOSE "MyAIDAProcessor"] RAIDA Version: not supported by cvs2svn
+[ VERBOSE "MyAIDAProcessor"] 
+[ VERBOSE "MyAIDAProcessor"] RAIDA only creates simple ROOT histograms
+[ VERBOSE "MyAIDAProcessor"] Used ROOT Release: 5.34/07
+[ VERBOSE "MyAIDAProcessor"] -------------------------------------------------------------------------------
+[ VERBOSE "MyAIDAProcessor"] 
+[ MESSAGE "VXDPlanarDigiProcessor"] 
+[ MESSAGE "VXDPlanarDigiProcessor"] ---- VXDPlanarDigiProcessor -  parameters: 
+[ MESSAGE "VXDPlanarDigiProcessor"] 	IsStrip:  false
+[ MESSAGE "VXDPlanarDigiProcessor"] 	ResolutionU:  0.0028 0.006 0.004 0.004 0.004 0.004 
+[ MESSAGE "VXDPlanarDigiProcessor"] 	ResolutionV:  0.0028 0.006 0.004 0.004 0.004 0.004 
+[ MESSAGE "VXDPlanarDigiProcessor"] 	SimTrackHitCollectionName:  VXDCollection
+[ MESSAGE "VXDPlanarDigiProcessor"] 	SimTrkHitRelCollection:  VXDTrackerHitRelations
+[ MESSAGE "VXDPlanarDigiProcessor"] 	TrackerHitCollectionName:  VXDTrackerHits
+[ MESSAGE "VXDPlanarDigiProcessor"] -------------------------------------------------
+[ MESSAGE "SITPlanarDigiProcessor"] 
+[ MESSAGE "SITPlanarDigiProcessor"] ---- SITPlanarDigiProcessor -  parameters: 
+[ MESSAGE "SITPlanarDigiProcessor"] 	IsStrip:  true
+[ MESSAGE "SITPlanarDigiProcessor"] 	ResolutionU:  0.007 
+[ MESSAGE "SITPlanarDigiProcessor"] 	ResolutionV:  0 
+[ MESSAGE "SITPlanarDigiProcessor"] 	SimTrackHitCollectionName:  SITCollection
+[ MESSAGE "SITPlanarDigiProcessor"] 	SimTrkHitRelCollection:  SITTrackerHitRelations
+[ MESSAGE "SITPlanarDigiProcessor"] 	TrackerHitCollectionName:  SITTrackerHits
+[ MESSAGE "SITPlanarDigiProcessor"] -------------------------------------------------
+[ MESSAGE "SITSpacePointBuilder"] 
+[ MESSAGE "SITSpacePointBuilder"] ---- SITSpacePointBuilder -  parameters: 
+[ MESSAGE "SITSpacePointBuilder"] 	NominalVertexX:  0
+[ MESSAGE "SITSpacePointBuilder"] 	NominalVertexY:  0
+[ MESSAGE "SITSpacePointBuilder"] 	NominalVertexZ:  0
+[ MESSAGE "SITSpacePointBuilder"] 	SimHitSpacePointRelCollection:  SITSpacePointRelations
+[ MESSAGE "SITSpacePointBuilder"] 	SpacePointsCollection:  SITSpacePoints
+[ MESSAGE "SITSpacePointBuilder"] 	StriplengthTolerance:  0.1
+[ MESSAGE "SITSpacePointBuilder"] 	TrackerHitCollection:  SITTrackerHits
+[ MESSAGE "SITSpacePointBuilder"] 	TrackerHitSimHitRelCollection:  SITTrackerHitRelations
+[ MESSAGE "SITSpacePointBuilder"] -------------------------------------------------
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] ---- FTDPixelPlanarDigiProcessor -  parameters: 
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	IsStrip:  false
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	ResolutionU:  0.003 
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	ResolutionV:  0.003 
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	SimTrackHitCollectionName:  FTD_PIXELCollection
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	SimTrkHitRelCollection:  FTDPixelTrackerHitRelations
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] 	TrackerHitCollectionName:  FTDPixelTrackerHits
+[ MESSAGE "FTDPixelPlanarDigiProcessor"] -------------------------------------------------
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 
+[ MESSAGE "FTDStripPlanarDigiProcessor"] ---- FTDStripPlanarDigiProcessor -  parameters: 
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	IsStrip:  true
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	ResolutionU:  0.007 
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	ResolutionV:  0 
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	SimTrackHitCollectionName:  FTD_STRIPCollection
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	SimTrkHitRelCollection:  FTDStripTrackerHitRelations
+[ MESSAGE "FTDStripPlanarDigiProcessor"] 	TrackerHitCollectionName:  FTDStripTrackerHits
+[ MESSAGE "FTDStripPlanarDigiProcessor"] -------------------------------------------------
+[ MESSAGE "FTDSpacePointBuilder"] 
+[ MESSAGE "FTDSpacePointBuilder"] ---- FTDSpacePointBuilder -  parameters: 
+[ MESSAGE "FTDSpacePointBuilder"] 	NominalVertexX:  0
+[ MESSAGE "FTDSpacePointBuilder"] 	NominalVertexY:  0
+[ MESSAGE "FTDSpacePointBuilder"] 	NominalVertexZ:  0
+[ MESSAGE "FTDSpacePointBuilder"] 	SimHitSpacePointRelCollection:  FTDSpacePointRelations
+[ MESSAGE "FTDSpacePointBuilder"] 	SpacePointsCollection:  FTDSpacePoints
+[ MESSAGE "FTDSpacePointBuilder"] 	StriplengthTolerance:  0.1
+[ MESSAGE "FTDSpacePointBuilder"] 	TrackerHitCollection:  FTDStripTrackerHits
+[ MESSAGE "FTDSpacePointBuilder"] 	TrackerHitSimHitRelCollection:  FTDStripTrackerHitRelations
+[ MESSAGE "FTDSpacePointBuilder"] -------------------------------------------------
+[ MESSAGE "SETPlanarDigiProcessor"] 
+[ MESSAGE "SETPlanarDigiProcessor"] ---- SETPlanarDigiProcessor -  parameters: 
+[ MESSAGE "SETPlanarDigiProcessor"] 	IsStrip:  true
+[ MESSAGE "SETPlanarDigiProcessor"] 	ResolutionU:  0.007 
+[ MESSAGE "SETPlanarDigiProcessor"] 	ResolutionV:  0 
+[ MESSAGE "SETPlanarDigiProcessor"] 	SimTrackHitCollectionName:  SETCollection
+[ MESSAGE "SETPlanarDigiProcessor"] 	SimTrkHitRelCollection:  SETTrackerHitRelations
+[ MESSAGE "SETPlanarDigiProcessor"] 	TrackerHitCollectionName:  SETTrackerHits
+[ MESSAGE "SETPlanarDigiProcessor"] -------------------------------------------------
+[ MESSAGE "SETSpacePointBuilder"] 
+[ MESSAGE "SETSpacePointBuilder"] ---- SETSpacePointBuilder -  parameters: 
+[ MESSAGE "SETSpacePointBuilder"] 	NominalVertexX:  0
+[ MESSAGE "SETSpacePointBuilder"] 	NominalVertexY:  0
+[ MESSAGE "SETSpacePointBuilder"] 	NominalVertexZ:  0
+[ MESSAGE "SETSpacePointBuilder"] 	SimHitSpacePointRelCollection:  SETSpacePointRelations
+[ MESSAGE "SETSpacePointBuilder"] 	SpacePointsCollection:  SETSpacePoints
+[ MESSAGE "SETSpacePointBuilder"] 	StriplengthTolerance:  0.1
+[ MESSAGE "SETSpacePointBuilder"] 	TrackerHitCollection:  SETTrackerHits
+[ MESSAGE "SETSpacePointBuilder"] 	TrackerHitSimHitRelCollection:  SETTrackerHitRelations
+[ MESSAGE "SETSpacePointBuilder"] -------------------------------------------------
+[ MESSAGE "MyTPCDigiProcessor"] 
+[ MESSAGE "MyTPCDigiProcessor"] ---- MyTPCDigiProcessor -  parameters: 
+[ MESSAGE "MyTPCDigiProcessor"] 	DiffusionCoeffRPhi:  0.025
+[ MESSAGE "MyTPCDigiProcessor"] 	DiffusionCoeffZ:  0.08
+[ MESSAGE "MyTPCDigiProcessor"] 	DoubleHitResolutionRPhi:  2
+[ MESSAGE "MyTPCDigiProcessor"] 	DoubleHitResolutionZ:  5
+[ MESSAGE "MyTPCDigiProcessor"] 	HitSortingBinningRPhi:  2
+[ MESSAGE "MyTPCDigiProcessor"] 	HitSortingBinningZ:  5
+[ MESSAGE "MyTPCDigiProcessor"] 	MaxClusterSizeForMerge:  3
+[ MESSAGE "MyTPCDigiProcessor"] 	N_eff:  22
+[ MESSAGE "MyTPCDigiProcessor"] 	PointResolutionPadPhi:  0.9
+[ MESSAGE "MyTPCDigiProcessor"] 	PointResolutionRPhi:  0.05
+[ MESSAGE "MyTPCDigiProcessor"] 	PointResolutionZ:  0.4
+[ MESSAGE "MyTPCDigiProcessor"] 	RejectCellID0:  1
+[ MESSAGE "MyTPCDigiProcessor"] 	SimTrkHitRelCollection:  TPCTrackerHitRelations
+[ MESSAGE "MyTPCDigiProcessor"] 	TPCLowPtCollectionName:  TPCLowPtCollection
+[ MESSAGE "MyTPCDigiProcessor"] 	TPCPadRowHitCollectionName:  TPCCollection
+[ MESSAGE "MyTPCDigiProcessor"] 	TPCSpacePointCollectionName:  TPCSpacePointCollection
+[ MESSAGE "MyTPCDigiProcessor"] 	TPCTrackerHitsCol:  TPCTrackerHits
+[ MESSAGE "MyTPCDigiProcessor"] 	UseRawHitsToStoreSimhitPointer:  false
+[ MESSAGE "MyTPCDigiProcessor"] -------------------------------------------------
+[ MESSAGE "MyClupatraProcessor"] 
+[ MESSAGE "MyClupatraProcessor"] ---- MyClupatraProcessor -  parameters: 
+[ MESSAGE "MyClupatraProcessor"] 	Chi2Cut:  100
+[ MESSAGE "MyClupatraProcessor"] 	CosAlphaCut:  1
+[ MESSAGE "MyClupatraProcessor"] 	CreateDebugCollections:  false
+[ MESSAGE "MyClupatraProcessor"] 	DistanceCut:  40
+[ MESSAGE "MyClupatraProcessor"] 	DuplicatePadRowFraction:  0.1
+[ MESSAGE "MyClupatraProcessor"] 	EnergyLossOn:  true
+[ MESSAGE "MyClupatraProcessor"] 	MaxDeltaChi2:  35
+[ MESSAGE "MyClupatraProcessor"] 	MaxStepWithoutHit:  6
+[ MESSAGE "MyClupatraProcessor"] 	MinLayerFractionWithMultiplicity:  0.5
+[ MESSAGE "MyClupatraProcessor"] 	MinLayerNumberWithMultiplicity:  3
+[ MESSAGE "MyClupatraProcessor"] 	MinimumClusterSize:  6
+[ MESSAGE "MyClupatraProcessor"] 	MultipleScatteringOn:  false
+[ MESSAGE "MyClupatraProcessor"] 	NLoopForSeeding:  4
+[ MESSAGE "MyClupatraProcessor"] 	NumberOfZBins:  150
+[ MESSAGE "MyClupatraProcessor"] 	OutputCollection:  ClupatraTracks
+[ MESSAGE "MyClupatraProcessor"] 	PadRowRange:  15
+[ MESSAGE "MyClupatraProcessor"] 	SITHitCollection:  SITTrackerHits
+[ MESSAGE "MyClupatraProcessor"] 	SegmentCollectionName:  ClupatraTrackSegments
+[ MESSAGE "MyClupatraProcessor"] 	SmoothOn:  false
+[ MESSAGE "MyClupatraProcessor"] 	TPCHitCollection:  TPCTrackerHits
+[ MESSAGE "MyClupatraProcessor"] 	TrackEndsOuterCentralDist:  25
+[ MESSAGE "MyClupatraProcessor"] 	TrackEndsOuterForwardDist:  40
+[ MESSAGE "MyClupatraProcessor"] 	TrackIsCurlerOmega:  0.001
+[ MESSAGE "MyClupatraProcessor"] 	TrackStartsInnerDist:  25
+[ MESSAGE "MyClupatraProcessor"] 	VXDHitCollection:  VXDTrackerHits
+[ MESSAGE "MyClupatraProcessor"] 	pickUpSiHits:  false
+[ MESSAGE "MyClupatraProcessor"] -------------------------------------------------
+[ VERBOSE "MyClupatraProcessor"] new instance
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 
+[ MESSAGE "MySiliconTracking_MarlinTrk"] ---- MySiliconTracking_MarlinTrk -  parameters: 
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	AngleCutForMerging:  0.1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	CheckForDelta:  1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2FitCut:  120
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WRphiQuartet:  1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WRphiSeptet:  1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WRphiTriplet:  1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WZQuartet:  0.5
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WZSeptet:  0.5
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	Chi2WZTriplet:  0.5
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	CreateDiagnosticsHistograms:  false
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	CutOnD0:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	CutOnPt:  0.05
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	CutOnZ0:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	DetectorTypeForDraw:  0
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	EnergyLossOn:  true
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	FTDPixelHitCollectionName:  FTDPixelTrackerHits
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	FTDSpacePointCollectionName:  FTDSpacePoints
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	FastAttachment:  0
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	HelixMaxR:  2000
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	InitialTrackErrorD0:  1e+06
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	InitialTrackErrorOmega:  0.0001
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	InitialTrackErrorPhi0:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	InitialTrackErrorTanL:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	InitialTrackErrorZ0:  1e+06
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	LayerCombinations:  8 6 5 8 6 4 8 6 3 8 6 2 8 5 3 8 5 2 8 4 3 8 4 2 6 5 3 6 5 2 6 4 3 6 4 2 6 3 1 6 3 0 6 2 1 6 2 0 5 3 1 5 3 0 5 2 1 5 2 0 4 3 1 4 3 0 4 2 1 4 2 0 
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	LayerCombinationsFTD:  4 3 2 4 3 1 4 3 0 4 2 1 4 2 0 4 1 0 3 2 1 3 2 0 3 1 0 2 1 0 9 8 7 9 8 6 9 8 5 9 7 6 9 7 5 9 6 5 8 7 6 8 7 5 8 6 5 7 6 5 
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MCParticleCollectionName:  MCParticle
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MCpThreshold:  0.1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MaxChi2PerHit:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MaxHitsPerSector:  100
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MinDistCutAttach:  2.5
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MinDistToDelta:  0.25
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MinLayerToAttach:  -1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MinimalHits:  3
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	MultipleScatteringOn:  true
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	NDivisionsInPhi:  80
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	NDivisionsInPhiFTD:  30
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	NDivisionsInTheta:  80
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	NHitsChi2:  5
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	SITHitCollectionName:  SITSpacePoints
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	SiTrackCollectionName:  SiTracks
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	SmoothOn:  false
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	UseEventDisplay:  false
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	UseSIT:  1
+[ MESSAGE "MySiliconTracking_MarlinTrk"] 	VTXHitCollectionName:  VXDTrackerHits
+[ MESSAGE "MySiliconTracking_MarlinTrk"] -------------------------------------------------
+[ MESSAGE "MyForwardTracking"] 
+[ MESSAGE "MyForwardTracking"] ---- MyForwardTracking -  parameters: 
+[ MESSAGE "MyForwardTracking"] 	BestSubsetFinder:  SubsetSimple
+[ MESSAGE "MyForwardTracking"] 	Chi2ProbCut:  0
+[ MESSAGE "MyForwardTracking"] 	Crit2_DeltaPhi_max:  30 0.8 
+[ MESSAGE "MyForwardTracking"] 	Crit2_DeltaPhi_min:  0 0 
+[ MESSAGE "MyForwardTracking"] 	Crit2_DeltaRho_max:  150 
+[ MESSAGE "MyForwardTracking"] 	Crit2_DeltaRho_min:  20 
+[ MESSAGE "MyForwardTracking"] 	Crit2_HelixWithIP_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit2_HelixWithIP_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit2_RZRatio_max:  1.08 
+[ MESSAGE "MyForwardTracking"] 	Crit2_RZRatio_min:  1.002 
+[ MESSAGE "MyForwardTracking"] 	Crit2_StraightTrackRatio_max:  1.02 1.01 
+[ MESSAGE "MyForwardTracking"] 	Crit2_StraightTrackRatio_min:  0.9 0.99 
+[ MESSAGE "MyForwardTracking"] 	Crit3_2DAngleTimesR_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_2DAngleTimesR_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_2DAngle_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_2DAngle_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_3DAngleTimesR_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_3DAngleTimesR_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_3DAngle_max:  10 0.35 
+[ MESSAGE "MyForwardTracking"] 	Crit3_3DAngle_min:  0 0 
+[ MESSAGE "MyForwardTracking"] 	Crit3_ChangeRZRatio_max:  1.015 1.001 
+[ MESSAGE "MyForwardTracking"] 	Crit3_ChangeRZRatio_min:  0.995 0.999 
+[ MESSAGE "MyForwardTracking"] 	Crit3_IPCircleDistTimesR_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_IPCircleDistTimesR_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit3_IPCircleDist_max:  20 1.5 
+[ MESSAGE "MyForwardTracking"] 	Crit3_IPCircleDist_min:  0 0 
+[ MESSAGE "MyForwardTracking"] 	Crit3_PT_max:  1e+08 
+[ MESSAGE "MyForwardTracking"] 	Crit3_PT_min:  0.1 
+[ MESSAGE "MyForwardTracking"] 	Crit4_2DAngleChange_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_2DAngleChange_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_3DAngleChangeNormed_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_3DAngleChangeNormed_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_3DAngleChange_max:  1.3 1.01 
+[ MESSAGE "MyForwardTracking"] 	Crit4_3DAngleChange_min:  0.8 0.99 
+[ MESSAGE "MyForwardTracking"] 	Crit4_DistOfCircleCenters_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_DistOfCircleCenters_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_DistToExtrapolation_max:  1 0.05 
+[ MESSAGE "MyForwardTracking"] 	Crit4_DistToExtrapolation_min:  0 0 
+[ MESSAGE "MyForwardTracking"] 	Crit4_NoZigZag_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_NoZigZag_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_PhiZRatioChange_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_PhiZRatioChange_min:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_RChange_max:  
+[ MESSAGE "MyForwardTracking"] 	Crit4_RChange_min:  
+[ MESSAGE "MyForwardTracking"] 	Criteria:  Crit2_DeltaPhi Crit2_DeltaRho Crit2_RZRatio Crit2_StraightTrackRatio Crit3_3DAngle Crit3_ChangeRZRatio Crit3_IPCircleDist Crit3_PT Crit4_DistToExtrapolation Crit4_3DAngleChange 
+[ MESSAGE "MyForwardTracking"] 	EnergyLossOn:  true
+[ MESSAGE "MyForwardTracking"] 	FTDHitCollections:  FTDPixelTrackerHits FTDSpacePoints 
+[ MESSAGE "MyForwardTracking"] 	ForwardTrackCollection:  ForwardTracks
+[ MESSAGE "MyForwardTracking"] 	HelixFitMax:  500
+[ MESSAGE "MyForwardTracking"] 	HitsPerTrackMin:  3
+[ MESSAGE "MyForwardTracking"] 	MaxConnectionsAutomaton:  100000
+[ MESSAGE "MyForwardTracking"] 	MaxHitsPerSector:  1000
+[ MESSAGE "MyForwardTracking"] 	MultipleScatteringOn:  true
+[ MESSAGE "MyForwardTracking"] 	OverlappingHitsDistMax:  3.5
+[ MESSAGE "MyForwardTracking"] 	SmoothOn:  false
+[ MESSAGE "MyForwardTracking"] 	TakeBestVersionOfTrack:  true
+[ MESSAGE "MyForwardTracking"] -------------------------------------------------
+[ MESSAGE "MyTrackSubsetProcessor"] 
+[ MESSAGE "MyTrackSubsetProcessor"] ---- MyTrackSubsetProcessor -  parameters: 
+[ MESSAGE "MyTrackSubsetProcessor"] 	EnergyLossOn:  true
+[ MESSAGE "MyTrackSubsetProcessor"] 	InitialTrackErrorD0:  1e+06
+[ MESSAGE "MyTrackSubsetProcessor"] 	InitialTrackErrorOmega:  0.0001
+[ MESSAGE "MyTrackSubsetProcessor"] 	InitialTrackErrorPhi0:  100
+[ MESSAGE "MyTrackSubsetProcessor"] 	InitialTrackErrorTanL:  100
+[ MESSAGE "MyTrackSubsetProcessor"] 	InitialTrackErrorZ0:  1e+06
+[ MESSAGE "MyTrackSubsetProcessor"] 	MaxChi2PerHit:  100
+[ MESSAGE "MyTrackSubsetProcessor"] 	MultipleScatteringOn:  true
+[ MESSAGE "MyTrackSubsetProcessor"] 	Omega:  0.75
+[ MESSAGE "MyTrackSubsetProcessor"] 	SmoothOn:  false
+[ MESSAGE "MyTrackSubsetProcessor"] 	TrackInputCollections:  ForwardTracks SiTracks 
+[ MESSAGE "MyTrackSubsetProcessor"] 	TrackOutputCollection:  SubsetTracks
+[ MESSAGE "MyTrackSubsetProcessor"] -------------------------------------------------
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] ---- MyFullLDCTracking_MarlinTrk -  parameters: 
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AngleCutForForcedMerging:  0.05
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AngleCutForMerging:  0.1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignETDHits:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignFTDHits:  1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignSETHits:  1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignSITHits:  1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignTPCHits:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	AssignVTXHits:  1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	Chi2FitCut:  100
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	CutOnSiHits:  4
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	CutOnTPCHits:  10
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	CutOnTrackD0:  500
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	CutOnTrackZ0:  500
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	D0CutForForcedMerging:  50
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	D0CutForMerging:  500
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	D0CutToMergeTPCSegments:  100
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	Debug:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	DeltaPCutToMergeTPCSegments:  0.1
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ETDHitCollection:  ETDTrackerHits
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ETDHitToTrackDistance:  10
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	EnergyLossOn:  true
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	FTDHitToTrackDistance:  2
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	FTDPixelHitCollectionName:  FTDPixelTrackerHits
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	FTDSpacePointCollectionName:  FTDSpacePoints
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ForbidOverlapInZComb:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ForbidOverlapInZTPC:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ForceSiTPCMerging:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	ForceTPCSegmentsMerging:  0
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	InitialTrackErrorD0:  1e+06
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	InitialTrackErrorOmega:  0.0001
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	InitialTrackErrorPhi0:  100
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	InitialTrackErrorTanL:  100
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	InitialTrackErrorZ0:  1e+06
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	LDCTrackCollection:  MarlinTrkTracks
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	MaxAllowedPercentageOfOutliersForTrackCombination:  0.3
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	MaxAllowedSiHitRejectionsForTrackCombination:  2
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	MaxChi2PerHit:  100
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	MinChi2ProbForSiliconTracks:  0.001
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	MultipleScatteringOn:  true
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	NHitsExtrapolation:  35
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	OmegaCutForForcedMerging:  0.15
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	OmegaCutForMerging:  0.25
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	PtCutToMergeTPCSegments:  1.2
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SETHitCollection:  SETSpacePoints
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SETHitToTrackDistance:  50
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SITHitCollection:  SITSpacePoints
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SITHitToTrackDistance:  2
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SiTracks:  SubsetTracks
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SiTracksMCPRelColl:  SubsetTracksMCTruthLink
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	SmoothOn:  true
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	TPCHitCollection:  TPCTrackerHits
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	TPCHitToTrackDistance:  15
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	TPCTracks:  ClupatraTracks
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	TPCTracksMCPRelColl:  TPCTracksMCTruthLink
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	VTXHitCollection:  VXDTrackerHits
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	VTXHitToTrackDistance:  1.5
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	VetoMergeMomentumCut:  2.5
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	Z0CutForForcedMerging:  200
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	Z0CutForMerging:  1000
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	Z0CutToMergeTPCSegments:  5000
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	cosThetaCutHighPtMerge:  0.99
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	cosThetaCutSoftHighPtMerge:  0.998
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	hitDistanceCutHighPtMerge:  25
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	maxFractionOfOutliersCutHighPtMerge:  0.95
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	maxHitDistanceCutHighPtMerge:  50
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	momDiffCutHighPtMerge:  0.01
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] 	momDiffCutSoftHighPtMerge:  0.25
+[ MESSAGE "MyFullLDCTracking_MarlinTrk"] -------------------------------------------------
+[ MESSAGE "MyG2CDArbor"] 
+[ MESSAGE "MyG2CDArbor"] ---- MyG2CDArbor -  parameters: 
+[ MESSAGE "MyG2CDArbor"] 	CalibrECAL:  45.32 60.87 
+[ MESSAGE "MyG2CDArbor"] 	ChanceOfKink:  0
+[ MESSAGE "MyG2CDArbor"] 	ChargeSpatialDistribution:  1 
+[ MESSAGE "MyG2CDArbor"] 	DigiCellSize:  10
+[ MESSAGE "MyG2CDArbor"] 	DigiECALCollection:  ECALBarrel ECALEndcap ECALOther 
+[ MESSAGE "MyG2CDArbor"] 	DigiHCALCollection:  HCALBarrel HCALEndcap HCALOther 
+[ MESSAGE "MyG2CDArbor"] 	ECALCollections:  EcalBarrelSiliconCollection EcalEndcapSiliconCollection EcalEndcapRingCollection 
+[ MESSAGE "MyG2CDArbor"] 	ECALThreshold:  5e-05
+[ MESSAGE "MyG2CDArbor"] 	HCALCollections:  HcalBarrelCollection HcalEndCapsCollection HcalEndCapRingsCollection 
+[ MESSAGE "MyG2CDArbor"] 	KinkHitChargeBoost:  1
+[ MESSAGE "MyG2CDArbor"] 	NumThinEcalLayer:  20
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaA:  1.1
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaB:  1
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaC:  0
+[ MESSAGE "MyG2CDArbor"] 	PositionShiftID:  0 0 0 
+[ MESSAGE "MyG2CDArbor"] 	UsingDefaultDetector:  0
+[ MESSAGE "MyG2CDArbor"] -------------------------------------------------
+[ VERBOSE "MyG2CDArbor"] Parameters After Para Review: 0, 1, 10
+[ MESSAGE "MyG2CDArbor"] 
+[ MESSAGE "MyG2CDArbor"] ---- MyG2CDArbor -  parameters: 
+[ MESSAGE "MyG2CDArbor"] 	CalibrECAL:  45.32 60.87 
+[ MESSAGE "MyG2CDArbor"] 	ChanceOfKink:  0
+[ MESSAGE "MyG2CDArbor"] 	ChargeSpatialDistribution:  1 
+[ MESSAGE "MyG2CDArbor"] 	DigiCellSize:  10
+[ MESSAGE "MyG2CDArbor"] 	DigiECALCollection:  ECALBarrel ECALEndcap ECALOther 
+[ MESSAGE "MyG2CDArbor"] 	DigiHCALCollection:  HCALBarrel HCALEndcap HCALOther 
+[ MESSAGE "MyG2CDArbor"] 	ECALCollections:  EcalBarrelSiliconCollection EcalEndcapSiliconCollection EcalEndcapRingCollection 
+[ MESSAGE "MyG2CDArbor"] 	ECALThreshold:  5e-05
+[ MESSAGE "MyG2CDArbor"] 	HCALCollections:  HcalBarrelCollection HcalEndCapsCollection HcalEndCapRingsCollection 
+[ MESSAGE "MyG2CDArbor"] 	KinkHitChargeBoost:  1
+[ MESSAGE "MyG2CDArbor"] 	NumThinEcalLayer:  20
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaA:  1.1
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaB:  1
+[ MESSAGE "MyG2CDArbor"] 	PolyaParaC:  0
+[ MESSAGE "MyG2CDArbor"] 	PositionShiftID:  0 0 0 
+[ MESSAGE "MyG2CDArbor"] 	UsingDefaultDetector:  0
+[ MESSAGE "MyG2CDArbor"] -------------------------------------------------
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ VERBOSE "MyG2CDArbor"] 
+[ MESSAGE "MyBushConnect"] 
+[ MESSAGE "MyBushConnect"] ---- MyBushConnect -  parameters: 
+[ MESSAGE "MyBushConnect"] 	Scale1:  0.5
+[ MESSAGE "MyBushConnect"] -------------------------------------------------
+[ MESSAGE "MyMarlinPandora"] PandoraPFANewProcessor - Init
+[ WARNING "MyMarlinPandora"]  ETDLayerZ or SETLayerRadius parameters missing from GEAR parameters!
+[ WARNING "MyMarlinPandora"]      -> both will be set to nan
+[ WARNING "MyMarlinPandora"] Marlin pandora geometry creator: gear::UnknownParameterException: No LHcalParameters set 
+[ MESSAGE "MyRecoMCTruthLinker"] 
+[ MESSAGE "MyRecoMCTruthLinker"] ---- MyRecoMCTruthLinker -  parameters: 
+[ MESSAGE "MyRecoMCTruthLinker"] 	BremsstrahlungEnergyCut:  1
+[ MESSAGE "MyRecoMCTruthLinker"] 	CalohitMCTruthLinkName:  
+[ MESSAGE "MyRecoMCTruthLinker"] 	ClusterCollection:  PandoraClusters
+[ MESSAGE "MyRecoMCTruthLinker"] 	ClusterMCTruthLinkName:  
+[ MESSAGE "MyRecoMCTruthLinker"] 	FullRecoRelation:  false
+[ MESSAGE "MyRecoMCTruthLinker"] 	KeepDaughtersPDG:  22 111 310 13 211 321 
+[ MESSAGE "MyRecoMCTruthLinker"] 	MCParticleCollection:  MCParticle
+[ MESSAGE "MyRecoMCTruthLinker"] 	MCParticlesSkimmedName:  MCParticlesSkimmed
+[ MESSAGE "MyRecoMCTruthLinker"] 	MCTruthTrackLinkName:  MCTruthMarlinTrkTracksLink
+[ MESSAGE "MyRecoMCTruthLinker"] 	RecoMCTruthLinkName:  RecoMCTruthLink
+[ MESSAGE "MyRecoMCTruthLinker"] 	RecoParticleCollection:  ArborPFOs
+[ MESSAGE "MyRecoMCTruthLinker"] 	SaveBremsstrahlungPhotons:  false
+[ MESSAGE "MyRecoMCTruthLinker"] 	SimCalorimeterHitRelationName:  CaloToSimuCaloLink
+[ MESSAGE "MyRecoMCTruthLinker"] 	SimTrackerHitCollections:  VXDCollection SITCollection FTD_PIXELCollection FTD_STRIPCollection TPCCollection SETCollection 
+[ MESSAGE "MyRecoMCTruthLinker"] 	TrackCollection:  MarlinTrkTracks
+[ MESSAGE "MyRecoMCTruthLinker"] 	TrackMCTruthLinkName:  MarlinTrkTracksMCTruthLink
+[ MESSAGE "MyRecoMCTruthLinker"] 	TrackerHitsRelInputCollections:  VXDTrackerHitRelations SITSpacePointRelations FTDPixelTrackerHitRelations FTDSpacePointRelations TPCTrackerHitRelations SETSpacePointRelations 
+[ MESSAGE "MyRecoMCTruthLinker"] 	UseTrackerHitRelations:  true
+[ MESSAGE "MyRecoMCTruthLinker"] 	UsingParticleGun:  false
+[ MESSAGE "MyRecoMCTruthLinker"] 	daughtersECutMeV:  10
+[ MESSAGE "MyRecoMCTruthLinker"] -------------------------------------------------
+[ MESSAGE "MyLCIOOutputProcessor"] 
+[ MESSAGE "MyLCIOOutputProcessor"] ---- MyLCIOOutputProcessor -  parameters: 
+[ MESSAGE "MyLCIOOutputProcessor"] 	LCIOOutputFile:  Psze_l0nunu.e0.p0.00005_rec.slcio
+[ MESSAGE "MyLCIOOutputProcessor"] 	LCIOWriteMode:  WRITE_NEW
+[ MESSAGE "MyLCIOOutputProcessor"] -------------------------------------------------
+[ MESSAGE "MySiliconTracking_MarlinTrk"] SiliconTracking_MarlinTrk ---> new run : run number = 0
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         0 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDPixelTrackerHits is not available!
+[ ERROR "MyForwardTracking"] Collection FTDSpacePoints is not available!
+[ ERROR "MyTrackSubsetProcessor"] Collection ForwardTracks is not available!
+[ VERBOSE "MyG2CDArbor"] eventNr: 0
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 0 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 440 all link Size 440
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "byte0:8,byte1:8,byte2:8,byte3:8,byte4:8,byte5:8,byte6:8,byte7:8"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "byte0:8,byte1:8,byte2:8,byte3:8,byte4:8,byte5:8,byte6:8,byte7:8"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 1 all link Size 441
+[ VERBOSE "MyBushConnect"] Nevts Processed: 0
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 61.7546 / 58.7598 TightLinkedClusterSize 5 HCALTightSize 0 : 5
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 31 : 55.9062 / 56.9136 TightLinkedClusterSize 5 HCALTightSize 0 : 5
+[ VERBOSE "MyBushConnect"] MinDis 305.387 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 30 Clusters with total En = 118.078 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 1 Clusters with total En = 0.22 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 117.951 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 118.298 =? 117.951
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 31 =? 2
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 117.661 : 0 : 117.661
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  tracker SimHit without MCParticle ?!   
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         1 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 1 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 0 all link Size 0
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 483 all link Size 483
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 0 all link Size 483
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 483
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 483
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 483
+[ VERBOSE "MyBushConnect"] Nevts Processed: 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 67.9181 / 65.5953 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 1.65471 / 1.67045 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 20 : 1.44592 / 1.17282 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 0 : 0.526168 / 0.274934 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 52.6277 : 219.591
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 28 Clusters with total En = 80.6561 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 4 Clusters with total En = 70.8943 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 3 Clusters with total En = 9.93644 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 80.6561 =? 80.8307
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 28 =? 7
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 71.5449 : 9.93644 : 81.4813
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         2 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDPixelTrackerHits is not available!
+[ ERROR "MyForwardTracking"] Collection FTDSpacePoints is not available!
+[ ERROR "MyTrackSubsetProcessor"] Collection ForwardTracks is not available!
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 2 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 242 all link Size 242
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 290 all link Size 532
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 532
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 532
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 532
+[ VERBOSE "MyBushConnect"] Nevts Processed: 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 74.2608 / 72.3362 TightLinkedClusterSize 5 HCALTightSize 0 : 5
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 31 : 33.6592 / 31.1393 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] MinDis 203.747 : 222.725
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 39 Clusters with total En = 122.446 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 105.432 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 17.866 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 122.446 =? 123.298
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 39 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 107.92 : 17.866 : 125.786
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         3 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 3 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 75 all link Size 75
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 167 all link Size 242
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 113 all link Size 355
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 355
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 355
+[ VERBOSE "MyBushConnect"] Nevts Processed: 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 43.6989 / 41.3326 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 10.7032 / 9.8101 TightLinkedClusterSize 7 HCALTightSize 0 : 7
+[ VERBOSE "MyBushConnect"] MinDis 53.5079 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 74.131 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 24 Clusters with total En = 75.3453 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 51.8289 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 3 Clusters with total En = 25.0443 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 75.3453 =? 76.8732
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 24 =? 5
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 54.4021 : 25.0443 : 79.4464
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         4 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDSpacePoints is not available!
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 4 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 446 all link Size 446
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 0 all link Size 446
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 446
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 446
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 446
+[ VERBOSE "MyBushConnect"] Nevts Processed: 4
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 86.2673 / 79.1574 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 35.2427 / 33.4132 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 31 Clusters with total En = 121.868 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 116.524 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 5.46091 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 121.868 =? 121.984
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 31 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 121.51 : 5.46091 : 126.971
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         5 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDPixelTrackerHits is not available!
+[ ERROR "MyTrackSubsetProcessor"] Collection ForwardTracks is not available!
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 5 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 146 all link Size 146
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 388 all link Size 534
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 534
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 534
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 534
+[ VERBOSE "MyBushConnect"] Nevts Processed: 5
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 33.7793 / 33.7201 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 30 : 51.4165 / 76.2812 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 1 : 89.3088 / 1.32363 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] Energy Flow Neutral Tagged 28.2236
+[ VERBOSE "MyBushConnect"] MinDis 95.5678 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 36 Clusters with total En = 115.62 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 3 Clusters with total En = 113.614 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 115.62 =? 113.614
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 36 =? 3
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 174.505 : 0 : 174.505
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         6 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 6 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 107 all link Size 107
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 219 all link Size 326
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 4 all link Size 330
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 330
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 330
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 330
+[ VERBOSE "MyBushConnect"] Nevts Processed: 6
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 17.0263 / 16.1072 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 41 : 92.1957 / 85.2785 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 26 Clusters with total En = 103.86 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 103.603 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 103.86 =? 103.603
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 26 =? 2
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 109.222 : 0 : 109.222
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         7 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 7 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 326 all link Size 326
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 389 all link Size 715
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 715
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 715
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 1 all link Size 716
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 716
+[ VERBOSE "MyBushConnect"] Nevts Processed: 7
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 75.3337 / 71.2286 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 10 : 9.62834 / 8.69441 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] MinDis 200.086 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 37 Clusters with total En = 118.402 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 1 Clusters with total En = 0.22 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 81.5958 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 3 Clusters with total En = 37.6606 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 118.622 =? 119.256
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 38 =? 5
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 84.962 : 37.6606 : 122.623
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         8 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 8 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 113 all link Size 113
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 478 all link Size 591
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 0 all link Size 591
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 591
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 591
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 591
+[ VERBOSE "MyBushConnect"] Nevts Processed: 8
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 94.6319 / 80.7923 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 23.785 / 23.4496 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] MinDis 192.4 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 54.5325 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 111.847 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 167.493
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 51.4711
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 39 Clusters with total En = 126.739 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 109.767 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 1 Clusters with total En = 17.1358 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 126.739 =? 126.902
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 39 =? 3
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 118.417 : 17.1358 : 135.553
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event         9 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDPixelTrackerHits is not available!
+[ ERROR "MyForwardTracking"] Collection FTDSpacePoints is not available!
+[ ERROR "MyTrackSubsetProcessor"] Collection ForwardTracks is not available!
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 9 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 573 all link Size 573
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 0 all link Size 573
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 573
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 573
+[ VERBOSE "MyBushConnect"] Nevts Processed: 9
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 81.7959 / 80.1659 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 39.6868 / 36.9003 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 32 Clusters with total En = 125.773 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 122.048 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 3.8332 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 125.773 =? 125.881
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 32 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 121.483 : 3.8332 : 125.316
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  tracker SimHit without MCParticle ?!   
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        10 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 10 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 222 all link Size 222
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 179 all link Size 401
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 0 all link Size 401
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 401
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 401
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 401
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 1 all link Size 402
+[ VERBOSE "MyBushConnect"] Nevts Processed: 10
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 43.7444 / 38.5248 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 68.9106 / 64.8697 TightLinkedClusterSize 7 HCALTightSize 0 : 7
+[ VERBOSE "MyBushConnect"] MinDis 138.452 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 181.304 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 33 Clusters with total En = 106.595 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 1 Clusters with total En = 0.22 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 106.527 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 106.815 =? 106.527
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 34 =? 2
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 112.655 : 0 : 112.655
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        11 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 11 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 127 all link Size 127
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 406 all link Size 533
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 533
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 533
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 533
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 533
+[ VERBOSE "MyBushConnect"] Nevts Processed: 11
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 66.9445 / 61.5269 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 23.5352 / 22.0096 TightLinkedClusterSize 6 HCALTightSize 0 : 6
+[ VERBOSE "MyBushConnect"] MinDis 112.368 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 34 Clusters with total En = 106.433 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 85.2023 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 22.3629 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 106.433 =? 107.565
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 34 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 90.4797 : 22.3629 : 112.843
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  tracker SimHit without MCParticle ?!   
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        12 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 12 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 357 all link Size 357
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 227 all link Size 584
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 0 all link Size 584
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 584
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 584
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 1 all link Size 585
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 585
+[ VERBOSE "MyBushConnect"] Nevts Processed: 12
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 26.1645 / 23.9431 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 82.9631 / 77.6313 TightLinkedClusterSize 6 HCALTightSize 1 : 7
+[ VERBOSE "MyBushConnect"] MinDis 95.1018 : 89.4757
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 37 Clusters with total En = 125.049 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 1 Clusters with total En = 0.33 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 103.319 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 21.7466 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 125.379 =? 125.065
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 38 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 109.128 : 21.7466 : 130.874
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        13 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 13 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 0 all link Size 0
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 110 all link Size 110
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 240 all link Size 350
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 350
+[ VERBOSE "MyBushConnect"] Nevts Processed: 13
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 8.94621 / 8.93151 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 40 : 8.03983 / 103.869 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] Energy Flow Neutral Tagged 96.7645
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 19 Clusters with total En = 116.536 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 113.865 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 1 Clusters with total En = 2.78136 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 116.536 =? 116.647
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 19 =? 3
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 16.986 : 2.78136 : 19.7674
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        14 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 14 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 217 all link Size 217
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 223 all link Size 440
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 440
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 440
+[ VERBOSE "MyBushConnect"] Nevts Processed: 14
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 64.1618 / 58.3162 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 31 : 37.9921 / 33.9822 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 38 Clusters with total En = 97.9092 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 95.7366 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 1 Clusters with total En = 2.06414 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 97.9092 =? 97.8007
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 38 =? 3
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 102.154 : 2.06414 : 104.218
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        15 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 15 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 156 all link Size 156
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 268 all link Size 424
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 424
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 424
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 424
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 424
+[ VERBOSE "MyBushConnect"] Nevts Processed: 15
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 67.9132 / 70.5406 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 51.0009 / 48.4196 TightLinkedClusterSize 5 HCALTightSize 0 : 5
+[ VERBOSE "MyBushConnect"] MinDis 195.299 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 190.672 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 186.512 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 182.85 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 340.641 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 218.153 : 457.379
+[ VERBOSE "MyBushConnect"] MinDis 112.355 : 353.38
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 31 Clusters with total En = 121.971 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 121.665 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 1 Clusters with total En = 0.22844 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 121.971 =? 121.893
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 31 =? 3
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 118.914 : 0.22844 : 119.143
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  case 2 for 0x29a3410(morefound=0)
+[ WARNING "MyRecoMCTruthLinker"]  case 2 for 0x29a3410(morefound=0)
+[ WARNING "MyRecoMCTruthLinker"]  case 2 for 0x29a3410(morefound=0)
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        16 run         0  ========= 
+[ ERROR "MyForwardTracking"] Collection FTDPixelTrackerHits is not available!
+[ ERROR "MyTrackSubsetProcessor"] Collection ForwardTracks is not available!
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 16 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 639 all link Size 639
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 0 all link Size 639
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 639
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 639
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 639
+[ VERBOSE "MyBushConnect"] Nevts Processed: 16
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 55.9828 / 52.631 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 52.8698 / 52.5906 TightLinkedClusterSize 6 HCALTightSize 0 : 6
+[ VERBOSE "MyBushConnect"] MinDis 195.85 : 221.847
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 36 Clusters with total En = 126.35 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 111.457 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 4 Clusters with total En = 14.6804 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 126.35 =? 126.138
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 36 =? 6
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 108.853 : 14.6804 : 123.533
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALEndcap, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALEndcap
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        17 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 17 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 96 all link Size 96
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 490 all link Size 586
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 586
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 586
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 1 all link Size 587
+[ VERBOSE "MyBushConnect"] Nevts Processed: 17
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 108.698 / 105.29 TightLinkedClusterSize 1 HCALTightSize 0 : 1
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 16.9042 / 14.2796 TightLinkedClusterSize 6 HCALTightSize 0 : 6
+[ VERBOSE "MyBushConnect"] MinDis 281.713 : 461.308
+[ VERBOSE "MyBushConnect"] MinDis 189.505 : 303.961
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 32 Clusters with total En = 123.093 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 1 Clusters with total En = 0.22 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 121.588 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 2 Clusters with total En = 1.83141 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 123.313 =? 123.419
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 33 =? 4
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 125.602 : 1.83141 : 127.433
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        18 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 18 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 319 all link Size 319
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 293 all link Size 612
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 612
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 612
+[ VERBOSE "MyMarlinArbor"] 5th Collection HCALBarrel has Size 0 all link Size 612
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 612
+[ VERBOSE "MyBushConnect"] Nevts Processed: 18
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 21 : 67.7617 / 62.6381 TightLinkedClusterSize 2 HCALTightSize 0 : 2
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 56.1384 / 51.7922 TightLinkedClusterSize 5 HCALTightSize 0 : 5
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 261.851 : 256.16
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 37 Clusters with total En = 137.937 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 118.196 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 3 Clusters with total En = 20.0916 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 137.937 =? 138.288
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 37 =? 5
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 123.9 : 20.0916 : 143.992
+[ MESSAGE "MyMarlinPandora"] Failed to extract ecal calo hit collection: ECALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:ECALOther
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ WARNING "MyRecoMCTruthLinker"]  particle has weight 0.000000. Particle charge and ntracks : 0.000000 0 but no mcparticle found 
+[ MESSAGE "MyTPCDigiProcessor"]   =========  processing event        19 run         0  ========= 
+[ VERBOSE "MyG2CDArbor"] Detector Tpype: CEPC_v1
+[ VERBOSE "MyMarlinArbor"] 19 events processed
+[ VERBOSE "MyMarlinArbor"] Start to prepare Hits
+[ VERBOSE "MyMarlinArbor"] 0th Collection ECALBarrel has Size 125 all link Size 125
+[ VERBOSE "MyMarlinArbor"] 1th Collection ECALEndcap has Size 0 all link Size 125
+[ VERBOSE "MyMarlinArbor"] 2th Collection ECALOther has Size 248 all link Size 373
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 3th Collection LCAL has Size 0 all link Size 373
+[ VERBOSE "MyMarlinArbor"]     ----------------------------------------- 
+[ VERBOSE "MyMarlinArbor"]        WARNING: CellIDDecoder - no CellIDEncoding parameter in collection ! 
+[ VERBOSE "MyMarlinArbor"]          -> using default : "M:3,S-1:3,I:9,J:9,K-1:6"
+[ VERBOSE "MyMarlinArbor"]     ------------------------------------------ 
+[ VERBOSE "MyMarlinArbor"] 4th Collection LHCAL has Size 0 all link Size 373
+[ VERBOSE "MyMarlinArbor"] 6th Collection HCALEndcap has Size 0 all link Size 373
+[ VERBOSE "MyBushConnect"] Nevts Processed: 19
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 11 : 20.8059 / 19.8148 TightLinkedClusterSize 4 HCALTightSize 0 : 4
+[ VERBOSE "MyBushConnect"] TrkEn/CluEn 41 : 89.3991 / 89.1093 TightLinkedClusterSize 3 HCALTightSize 0 : 3
+[ VERBOSE "MyBushConnect"] MinDis 1e+10 : 1e+10
+[ VERBOSE "MyBushConnect"] MinDis 118.69 : 1e+10
+[ VERBOSE "MyBushConnect"] CurrColl EcalBushes has 38 Clusters with total En = 111.476 GeV
+[ VERBOSE "MyBushConnect"] CurrColl HcalBushes has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborCharged has 2 Clusters with total En = 111.334 GeV
+[ VERBOSE "MyBushConnect"] CurrColl ArborNeutral has 0 Clusters with total En = 0 GeV
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Comparison Energy 111.476 =? 111.334
+[ VERBOSE "MyBushConnect"] Comparison Cluster Size 38 =? 2
+[ VERBOSE "MyBushConnect"] 
+[ VERBOSE "MyBushConnect"] Energy Ch/En/Total: 110.205 : 0 : 110.205
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALBarrel, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALBarrel
+[ MESSAGE "MyMarlinPandora"] Failed to extract hcal calo hit collection: HCALOther, lcio::DataNotAvailableException: LCEventImpl::getCollection: collection not in event:HCALOther
+[ MESSAGE4 "MyLCIOOutputProcessor"] 
+[ MESSAGE4 "MyLCIOOutputProcessor"] LCIOOutputProcessor::end()  MyLCIOOutputProcessor: 20 events in 1 runs written to file  Psze_l0nunu.e0.p0.00005_rec.slcio
+[ MESSAGE4 "MyLCIOOutputProcessor"] 
+[ MESSAGE "MyMarlinPandora"] PandoraPFANewProcessor - End
+[ VERBOSE "MyBushConnect"] Bush Connection Finished, ArborObject Formed
+[ VERBOSE "MyMarlinArbor"] Arbor Ends. Good luck
+[ VERBOSE "MyG2CDArbor"] General Gas Digitizer FINISHED
+[ MESSAGE "MyClupatraProcessor"] ClupatraProcessor::end()  MyClupatraProcessor processed 20 events in 1 runs 
+[ MESSAGE "MyTPCDigiProcessor"] TPCDigiProcessor::end()  MyTPCDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "SETPlanarDigiProcessor"]  end()  SETPlanarDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "FTDStripPlanarDigiProcessor"]  end()  FTDStripPlanarDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "FTDPixelPlanarDigiProcessor"]  end()  FTDPixelPlanarDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "SITPlanarDigiProcessor"]  end()  SITPlanarDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "VXDPlanarDigiProcessor"]  end()  VXDPlanarDigiProcessor processed 20 events in 1 runs 
+[ MESSAGE "Marlin"]  --------------------------------------------------------- 
+[ MESSAGE "Marlin"]   Events skipped by processors : 
+[ MESSAGE "Marlin"]   Total: 0
+[ MESSAGE "Marlin"]  --------------------------------------------------------- 
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"]  --------------------------------------------------------- 
+[ MESSAGE "Marlin"]       Time used by processors ( in processEvent() ) :      
+[ MESSAGE "Marlin"] 
+[ MESSAGE "Marlin"] MyMarlinPandora                      1.891000e+01 s in           20 events  ==> 9.455000e-01 [ s/evt.] 
+[ MESSAGE "Marlin"] MyMarlinArbor                        1.267000e+01 s in           20 events  ==> 6.335000e-01 [ s/evt.] 
+[ MESSAGE "Marlin"] MyLCIOOutputProcessor                6.680000e+00 s in           20 events  ==> 3.340000e-01 [ s/evt.] 
+[ MESSAGE "Marlin"] MyBushConnect                        4.210000e+00 s in           20 events  ==> 2.105000e-01 [ s/evt.] 
+[ MESSAGE "Marlin"] MyFullLDCTracking_MarlinTrk          2.880000e+00 s in           20 events  ==> 1.440000e-01 [ s/evt.] 
+[ MESSAGE "Marlin"] MyClupatraProcessor                  1.820000e+00 s in           20 events  ==> 9.100000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MyRecoMCTruthLinker                  1.040000e+00 s in           20 events  ==> 5.200000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MySiliconTracking_MarlinTrk          8.800000e-01 s in           20 events  ==> 4.400000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MyTrackSubsetProcessor               7.500000e-01 s in           20 events  ==> 3.750000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MyForwardTracking                    6.300000e-01 s in           20 events  ==> 3.150000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MyTPCDigiProcessor                   2.300000e-01 s in           20 events  ==> 1.150000e-02 [ s/evt.] 
+[ MESSAGE "Marlin"] MyG2CDArbor                          4.000000e-02 s in           20 events  ==> 2.000000e-03 [ s/evt.] 
+[ MESSAGE "Marlin"] MyAIDAProcessor                      1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] SITSpacePointBuilder                 1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] FTDPixelPlanarDigiProcessor          1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] FTDStripPlanarDigiProcessor          1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] FTDSpacePointBuilder                 1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] SETPlanarDigiProcessor               1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] MySimpleBCalDigi                     1.000000e-02 s in           20 events  ==> 5.000000e-04 [ s/evt.] 
+[ MESSAGE "Marlin"] VXDPlanarDigiProcessor               0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"] SITPlanarDigiProcessor               0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"] SETSpacePointBuilder                 0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"] MySimpleLCalDigi                     0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"] MySimpleLHCalDigi                    0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"] MySimpleMuonDigi                     0.000000e+00 s in           20 events  ==> 0.000000e+00 [ s/evt.] 
+[ MESSAGE "Marlin"]             Total:                   5.081000e+01 s in           20 events  ==> 2.540500e+00 [ s/evt.] 
+[ MESSAGE "Marlin"]  --------------------------------------------------------- 
+
+real	0m58.459s
+user	0m54.710s
+sys	0m0.287s

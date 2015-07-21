@@ -1,0 +1,2079 @@
+
+**** Mokka started at Sun Jul 12 18:07:08 2015
+
+Initialisation: /Mokka/init/BatchMode true
+Initialisation: /Mokka/init/printLevel 0
+Initialisation: /Mokka/init/detectorModel CEPC_v1
+Initialisation: /Mokka/init/EditGeometry/rmSubDetector SServices_O2_v00
+Initialisation: /Mokka/init/dbHost 202.114.78.211
+Initialisation: /Mokka/init/user consult
+Initialisation: /Mokka/init/dbPasswd consult
+Initialisation: /Mokka/init/lcioFilename Psze_l0nunu.e0.p0.00002_sim.slcio
+Initialisation: /Mokka/init/initialMacroFile event.macro
+Initialisation: /Mokka/init/lcioDetailedShowerMode true
+Initialisation: /Mokka/init/userInitBool WriteCompleteHepEvt true
+Initialisation: /Mokka/init/lcioWriteMode WRITE_NEW
+Initialisation: /Mokka/init/lcioStoreCalHitPosition true
+MokkaVersion : void
+$Id$
+Constructing RunManager...
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-01    (1-February-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+<<< Geant4 Physics List simulation engine: QGSP_BERT 4.0
+
+ *** Can't load ExtraParticles - file not found: particle.tbl
+Connecting to the database "models03"
+Connecting to the database "models03"
+CGAGeometryManager starting the detector construction: 
+Asking for the model CEPC_v1: found. 
+Detector concept is "CEPC", detector setup is "".
+**************************************************
+*                  BE CAREFUL                    *
+*    This detector model is still unstable!!!    *
+**************************************************
+
+Connecting to the database "materials02"
+air->GetRadlen() = 303.921 m  
+
+Cooking the geometry, original model recipe in database:
+(subdetector/database/driver/sub_driver/build_order)
+vxd07 / vxd07 / SVxd04 / vxd04 / 20
+SEcal05 / VOID / SEcal05 /  / 90
+LumiCalV_cepc / VOID / SLcal_cepc / LumiCalV00 / 100
+SHcalRpc01 / VOID / SHcalRpc01 /  / 110
+tube_cepc / tube_cepc / Tube_cepc /  / 150
+mask_cepc / mask_cepc / Mask_cepc /  / 160
+tpc10_01 / tpc10_01 / tpc10 /  / 200
+sit_simple_planar_sensors_03 / sit_simple_planar_sensors_03 / SIT_Simple_Planar /  / 210
+ftd_cepc / ftd_cepc / FTD_cepc /  / 220
+set_simple_planar_sensors_01 / set_simple_planar_sensors_01 / SET_Simple_Planar /  / 230
+SCoil03 / VOID / SCoil02 / coil01 / 400
+yoke05 / yoke04 / yoke05 /  / 500
+SField01 / VOID / SField01 / field00 / 1000
+
+Edition commands
+(0=add, 1=rm / name / build_order)
+1 / SServices_O2_v00 / 0
+
+
+Final model recipe after cooking it:
+(subdetector/database/driver/sub_driver/build_order)
+vxd07 / vxd07 / SVxd04 / vxd04 / 20
+SEcal05 / VOID / SEcal05 /  / 90
+LumiCalV_cepc / VOID / SLcal_cepc / LumiCalV00 / 100
+SHcalRpc01 / VOID / SHcalRpc01 /  / 110
+tube_cepc / tube_cepc / Tube_cepc /  / 150
+mask_cepc / mask_cepc / Mask_cepc /  / 160
+tpc10_01 / tpc10_01 / tpc10 /  / 200
+sit_simple_planar_sensors_03 / sit_simple_planar_sensors_03 / SIT_Simple_Planar /  / 210
+ftd_cepc / ftd_cepc / FTD_cepc /  / 220
+set_simple_planar_sensors_01 / set_simple_planar_sensors_01 / SET_Simple_Planar /  / 230
+SCoil03 / VOID / SCoil02 / coil01 / 400
+yoke05 / yoke04 / yoke05 /  / 500
+SField01 / VOID / SField01 / field00 / 1000
+
+Building sub_detector vxd07, geometry db vxd07, driver SVxd04:
+vxd dl update
+  Current parameters for the vxd07 detector : 
+   - VXD_active_side_band_electronics_option = 0
+   - VXD_active_silicon_thickness = 0.05
+   - VXD_cryostat_option = 1
+   - VXD_end_ladd_electronics_half_length = 5
+   - VXD_end_ladd_electronics_option = 1
+   - VXD_end_ladd_electronics_thickness = 0.1
+   - VXD_flex_cable_thickness = 0.05
+   - VXD_foam_spacer_material = "SiC_foam"
+   - VXD_foam_spacer_thickness = 0.94
+   - VXD_inner_radius = 16
+   - VXD_layer_gap = 2.0
+   - VXD_length_r1 = 62.5
+   - VXD_length_r3 = 125
+   - VXD_length_r5 = 125
+   - VXD_metal_traces_thickness = 0.01
+   - VXD_radius_r1 = 16
+   - VXD_radius_r3 = 37
+   - VXD_radius_r5 = 58
+   - VXD_side_band_electronics_option = 1
+   - VXD_side_band_electronics_thickness = 0.05
+   - VXD_side_band_electronics_width = 0.5
+   - VXD_width_r1 = 5.5
+   - VXD_width_r3 = 11
+   - VXD_width_r5 = 11
+Connecting to the database "models03"
+WARNING: User variable "TIMEOUT_TO_RELAX_TMP" of type string is unknown, you'll get the empty string.
+WARNING: User variable "SLEEP_BEFORE_RETRY" of type int is unknown, you'll get "0".
+CONNECTION_ID = 1199609, UNIX_TIMESTAMP = 1436695637, waiting for an available temporary database...
+tmp database name is TMP_DB17
+SJA:TAG: update layer set layer_radius = 58 where id=6 ;
+ nombre de couches : 6
+ *********************************** 
+ layer id : 1
+ new_radius : 16
+ old_radius : 16
+ ladder width : 5.5
+ ladder length : 62.5
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 10
+ longer ladder length : 145
+ *********************************** 
+ layer id : 2
+ new_radius : 16
+ old_radius : 16
+ ladder width : 5.5
+ ladder length : 62.5
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 10
+ longer ladder length : 145
+ *********************************** 
+ layer id : 3
+ new_radius : 37
+ old_radius : 37
+ ladder width : 11
+ ladder length : 125
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 11
+ longer ladder length : 145
+ *********************************** 
+ layer id : 4
+ new_radius : 37
+ old_radius : 37
+ ladder width : 11
+ ladder length : 125
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 11
+ longer ladder length : 145
+ *********************************** 
+ layer id : 5
+ new_radius : 58
+ old_radius : 58
+ ladder width : 11
+ ladder length : 125
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 17
+ longer ladder length : 145
+ *********************************** 
+ layer id : 6
+ new_radius : 58
+ old_radius : 58
+ ladder width : 11
+ ladder length : 125
+ foam spacer thickness : 0.94
+ flex cable thickness : 0.05
+ metal traces thickness : 0.01
+ active thickness : 0.05
+ nb ladder : 17
+ longer ladder length : 145
+SVxd04 PostLoadScriptAction set radius of first layer to  16
+SVxd04 PostLoadScriptAction set radius of last layer to  58
+SVxd04 PostLoadScriptAction the layer gap is   2
+Super detector SVxd04 DONE!
+
+Connecting to the database "TMP_DB17"
+Connecting to the database "materials02"
+silicon_2.33gccm->GetRadlen() = 9.36607 cm 
+Connecting to the database "materials02"
+kapton->GetRadlen() = 28.5748 cm 
+Connecting to the database "materials02"
+aluminium->GetRadlen() = 8.89632 cm 
+Connecting to the database "materials02"
+SiC_foam->GetRadlen() = 1.34564 m  
+Connecting to the database "materials02"
+carbon->GetRadlen() = 21.3485 cm 
+Connecting to the database "materials02"
+silicon->GetRadlen() = 9.36607 cm 
+Connecting to the database "materials02"
+H2->GetRadlen() = 7.52776 km 
+Connecting to the database "materials02"
+N2->GetRadlen() = 326.022 m  
+Connecting to the database "materials02"
+oxygen->GetRadlen() = 257.138 m  
+Connecting to the database "materials02"
+copper->GetRadlen() = 1.43558 cm 
+Connecting to the database "materials02"
+titanium->GetRadlen() = 3.5602 cm 
+Connecting to the database "materials02"
+beryllium->GetRadlen() = 35.276 cm 
+Connecting to the database "materials02"
+styropor->GetRadlen() = 17.5165 m  
+rAlu 100
+drAlu 0.5
+aluHalfZ 176.6
+drSty 10
+rInner 24.2
++aluEndcapZ 176.85
+shell_inner_radious 65
+foam inner radius 90
+database name =TMP_DB17
+Sub_detector vxd07 DONE!
+
+
+Building sub_detector SEcal05, geometry db VOID, driver SEcal05:
+A scalable ILD Ecal mixing Si and/or scintillator
+  Current parameters for the SEcal05 detector : 
+   - Ecal_Alveolus_Air_Gap = 0.5
+   - Ecal_Barrel_halfZ = 2350
+   - Ecal_EC_Ring_gap = 10
+   - Ecal_Lcal_ring_gap = 54.8
+   - Ecal_MPPC_size = 0.91
+   - Ecal_Sc_MPPC_breadth = 2.5
+   - Ecal_Sc_N_strips_across_module = 4
+   - Ecal_Sc_Si_mix = 000000000000000
+   - Ecal_Sc_number_of_virtual_cells = 9
+   - Ecal_Sc_reflector_thickness = 0.057
+   - Ecal_Sc_thickness = 2.0
+   - Ecal_Si_thickness = 0.5
+   - Ecal_Slab_H_fiber_thickness = 0.55
+   - Ecal_Slab_PCB_thickness = 0.8
+   - Ecal_Slab_Sc_PCB_thickness = 0.8
+   - Ecal_Slab_copper_thickness = 0.4
+   - Ecal_Slab_glue_gap = 0.1
+   - Ecal_Slab_ground_thickness = 0.1
+   - Ecal_Slab_shielding = 0.1
+   - Ecal_Tpc_gap = 35
+   - Ecal_barrel_number_of_towers = 5
+   - Ecal_barrel_number_of_towersA = 5
+   - Ecal_barrel_number_of_towersB = 3
+   - Ecal_barrel_number_of_towersC = 3
+   - Ecal_cables_gap = 100.
+   - Ecal_cells_size = 4.9
+   - Ecal_endcap_center_box_size = 800.0
+   - Ecal_endcap_extra_size = 60.8
+   - Ecal_fiber_thickness = 0.15
+   - Ecal_front_face_thickness = 2
+   - Ecal_guard_ring_size = 0.5
+   - Ecal_lateral_face_thickness = 2
+   - Ecal_n_wafers_per_tower = 2
+   - Ecal_nlayers1 = 20
+   - Ecal_nlayers2 = 9
+   - Ecal_nlayers3 = 0
+   - Ecal_radiator_layers_set1_thickness = 2.1
+   - Ecal_radiator_layers_set2_thickness = 4.2
+   - Ecal_radiator_layers_set3_thickness = 0
+   - Ecal_radiator_material = tungsten
+   - Ecal_support_thickness = 9.3
+   - Lcal_outer_radius = 172
+   - TPC_outer_radius = 1808
+   - TUBE_crossing_angle = 0
+
+Building Ecal- SEcal05
+Connecting to the database "materials02"
+tungsten_19.3gccm->GetRadlen() = 3.50418 mm 
+tungsten is the radiator material being placed.
+WARNING: User variable "Ecal_Sc_cellDim1_string" of type string is unknown, you'll get the empty string.
+WARNING: User variable "Ecal_Sc_cellDim2_string" of type string is unknown, you'll get the empty string.
+
+
+ fillCellDimVector: 
+  i 0 vec: 0
+  i 1 vec: 0
+  i 2 vec: 0
+  i 3 vec: 0
+  i 4 vec: 0
+  i 5 vec: 0
+  i 6 vec: 0
+  i 7 vec: 0
+  i 8 vec: 0
+  i 9 vec: 0
+  i 10 vec: 0
+  i 11 vec: 0
+  i 12 vec: 0
+  i 13 vec: 0
+  i 14 vec: 0
+  i 15 vec: 0
+  i 16 vec: 0
+  i 17 vec: 0
+  i 18 vec: 0
+  i 19 vec: 0
+  i 20 vec: 0
+  i 21 vec: 0
+  i 22 vec: 0
+  i 23 vec: 0
+  i 24 vec: 0
+  i 25 vec: 0
+  i 26 vec: 0
+  i 27 vec: 0
+  i 28 vec: 0
+  i 29 vec: 0
+
+
+ fillCellDimVector: 
+  i 0 vec: 0
+  i 1 vec: 0
+  i 2 vec: 0
+  i 3 vec: 0
+  i 4 vec: 0
+  i 5 vec: 0
+  i 6 vec: 0
+  i 7 vec: 0
+  i 8 vec: 0
+  i 9 vec: 0
+  i 10 vec: 0
+  i 11 vec: 0
+  i 12 vec: 0
+  i 13 vec: 0
+  i 14 vec: 0
+  i 15 vec: 0
+  i 16 vec: 0
+  i 17 vec: 0
+  i 18 vec: 0
+  i 19 vec: 0
+  i 20 vec: 0
+  i 21 vec: 0
+  i 22 vec: 0
+  i 23 vec: 0
+  i 24 vec: 0
+  i 25 vec: 0
+  i 26 vec: 0
+  i 27 vec: 0
+  i 28 vec: 0
+  i 29 vec: 0
+ Ecal_total_SiSlab_thickness = 2.25
+ Ecal_total_ScSlab_thickness = 3.664
+ Ecal total number of Silicon layers = 30
+ Ecal total number of Scintillator layers = 0
+Ecal_Barrel_module_dim_z  = 940
+alveolus_dim_z = 185
+For information : module_thickness = 185
+************************************
+WARNING redefining width of endcap alveolus to fill available space !!!!
+new endcap width = 185 number of alveolii = 9
+for information, barrel alveolar width = 185
+************************************
+ bottom_dim_x = 1788.42
+ top_dim_x = 1418.42
+ endcap_module_dim_x = 2488.8
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+quartz->GetRadlen() = 11.6577 cm 
+Connecting to the database "materials02"
+epoxy->GetRadlen() = 31.59 cm 
+g10->GetRadlen() = 16.2002 cm 
+siPCBMix: g10FractionMass = 0.181237
+siPCBMix: cuFractionMass = 0.818763
+siPCBMix->GetDensity() = 5.05077 g/cm3
+siPCBMix->GetRadlen() = 2.81898 cm
+groundMix: kaptonFractionMass = 0.136802
+groundMix: cuFractionMass = 0.863198
+groundMix->GetDensity() = 5.19 g/cm3
+groundMix->GetRadlen() = 2.73381 cm
+scPCBMix: ScG10FractionMass = 0.232877
+scPCBMix: ScCuFractionMass = 0.767123
+scPCBMix->GetDensity() = 4.49231 g/cm3
+scPCBMix->GetRadlen() = 3.26901 cm
+
+
+====================================== Build
+ total_Si_dim_z:      185
+ util_SI_wafer_dim_z: 91.5
+ cell_dim_x: 5.08333
+ cell_dim_z: 5.08333
+ Ecal_guard_ring_size: 0.5
+ N_cells_in_Z: 18
+ N_cells_in_X: 18
+With the actual parameters for Ecal you have:
+ cell_dim_z = 5.08333
+
+****>>>> Warning: 
+Ecal_cells_size redefined, forcing cell_dim_x to 5.08333 
+to insure squared Si cells!
+
+ # of cells in X = 18
+ # of cells in Z = 18
+
+
+ EC total_Si_dim_z: 185
+ EC_util_SI_wafer_dim_z: 91.5
+ EC_cell_dim_x: 5.08333
+ EC_cell_dim_z: 5.08333
+ EC_N_cells_in_X: 18
+ EC_N_cells_in_Z: 18
+With the actual parameters for Ecal endcap you have:
+ EC_cell_dim_z = 5.08333
+
+****>>>> Warning: 
+EndCap Ecal_cells_size redefined, forcing cell_dim_x to 5.08333 
+to ensure squared Si cells!
+
+ # of cells in X (EC) = 18
+ # of cells in Z (EC) = 18
+
+ >> Si sensitive plates in Ecal rings are 776 X 776 mm sized
+
+***** Forcing cell size in Ecal rings to be 5.10526 mm,
+ to insure an integer number of cells.
+With these values the Ecal rings will have 
+152 X 152 identique cells of 5.10526 mm as size. *****
+
+
+
+
+ ================== BarrelStandardModule
+alveolus_dim_x = 1769.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 1
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 1
+y_floor = 2.45, layer_id = 1, alveolus_dim_y = 6.9
+radiator_dim_x = 1764.02
+y_floor= 10.1, even_layer=2, W_thick=2.1
+alveolus_dim_x = 1748.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 3
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 3
+y_floor = 12.95, layer_id = 3, alveolus_dim_y = 6.9
+radiator_dim_x = 1743.02
+y_floor= 20.6, even_layer=4, W_thick=2.1
+alveolus_dim_x = 1727.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 5
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 5
+y_floor = 23.45, layer_id = 5, alveolus_dim_y = 6.9
+radiator_dim_x = 1722.02
+y_floor= 31.1, even_layer=6, W_thick=2.1
+alveolus_dim_x = 1706.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 7
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 7
+y_floor = 33.95, layer_id = 7, alveolus_dim_y = 6.9
+radiator_dim_x = 1701.02
+y_floor= 41.6, even_layer=8, W_thick=2.1
+alveolus_dim_x = 1685.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 9
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 9
+y_floor = 44.45, layer_id = 9, alveolus_dim_y = 6.9
+radiator_dim_x = 1680.02
+y_floor= 52.1, even_layer=10, W_thick=2.1
+alveolus_dim_x = 1664.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 11
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 11
+y_floor = 54.95, layer_id = 11, alveolus_dim_y = 6.9
+radiator_dim_x = 1659.02
+y_floor= 62.6, even_layer=12, W_thick=2.1
+alveolus_dim_x = 1643.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 13
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 13
+y_floor = 65.45, layer_id = 13, alveolus_dim_y = 6.9
+radiator_dim_x = 1638.02
+y_floor= 73.1, even_layer=14, W_thick=2.1
+alveolus_dim_x = 1622.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 15
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 15
+y_floor = 75.95, layer_id = 15, alveolus_dim_y = 6.9
+radiator_dim_x = 1617.02
+y_floor= 83.6, even_layer=16, W_thick=2.1
+alveolus_dim_x = 1601.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 17
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 17
+y_floor = 86.45, layer_id = 17, alveolus_dim_y = 6.9
+radiator_dim_x = 1596.02
+y_floor= 94.1, even_layer=18, W_thick=2.1
+alveolus_dim_x = 1580.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 19
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 19
+y_floor = 96.95, layer_id = 19, alveolus_dim_y = 6.9
+radiator_dim_x = 1575.02
+y_floor= 104.6, even_layer=20, W_thick=2.1
+alveolus_dim_x = 1555.52
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 21
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 21
+y_floor = 107.45, layer_id = 21, alveolus_dim_y = 9
+radiator_dim_x = 1545.62
+y_floor= 117.2, even_layer=22, W_thick=4.2
+alveolus_dim_x = 1526.12
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 23
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 23
+y_floor = 122.15, layer_id = 23, alveolus_dim_y = 9
+radiator_dim_x = 1516.22
+y_floor= 131.9, even_layer=24, W_thick=4.2
+alveolus_dim_x = 1496.72
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 25
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 25
+y_floor = 136.85, layer_id = 25, alveolus_dim_y = 9
+radiator_dim_x = 1486.82
+y_floor= 146.6, even_layer=26, W_thick=4.2
+alveolus_dim_x = 1467.32
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 27
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 27
+y_floor = 151.55, layer_id = 27, alveolus_dim_y = 9
+radiator_dim_x = 1457.42
+y_floor= 161.3, even_layer=28, W_thick=4.2
+alveolus_dim_x = 1437.92
+
+--------------------- BuildBarrelAlveolus
+ pair layer_id: 29
+ barrelStripSizeinX:         5.13889
+ barrelStripSizeParallelToZ: 46.25
+ BarrelStandardModule: loop over layer pair 29
+y_floor = 166.25, layer_id = 29, alveolus_dim_y = 9
+
+
+-------------------- EC_Initialize
+ EC_n_alveolus=9
+ direction=0
+ EC_TowerSlabs.size=0
+
+For information: Ecal endcap modules have 9 towers,
+0 mm are lost (no enough space left for more one tower).
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=1
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=3
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=5
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=7
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=9
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=11
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=13
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=15
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=17
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=19
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=21
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=23
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=25
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=27
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=29
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=1
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=3
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=5
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=7
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=9
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=11
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=13
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=15
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=17
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=19
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=21
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=23
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=25
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=27
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+
+ ----------------------------------- BuildECAlveolus
+ layer_id=29
+ EC_FirstLayerTowerSlabs->size(): 9
+ EC_SecondLayerTowerSlabs->size(): 9
+
+ GEAR barrel:
+ i=1 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=2 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=3 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=4 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=5 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=6 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=7 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=8 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=9 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=10 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=11 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=12 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=13 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=14 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=15 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=16 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=17 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=18 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=19 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=20 calcThick=6.3 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR barrel:
+ i=21 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=22 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=23 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=24 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=25 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=26 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=27 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR barrel:
+ i=28 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=1 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=2 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=3 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=4 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=5 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=6 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=7 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=8 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=9 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=10 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=11 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=12 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=13 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=14 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=15 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=16 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=17 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=18 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=19 calcThick=5.25 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=20 calcThick=6.3 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=2.1
+
+ GEAR endcap:
+ i=21 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=22 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=23 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=24 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=25 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=26 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=27 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+
+ GEAR endcap:
+ i=28 calcThick=7.35 cell_dim_1=5.08333 cell_dim_2=5.08333 radiThickness=4.2
+Ecal done.
+
+SEcal information: Ecal_inner_radius = 1843
+                  Ecal_outer_radius = 2028
+                  module thickness  = 185
+                  Ecal_endcap_outer_radius = 2088.8
+                  Ecal_endcap_zmin = 2450
+                  Ecal_endcap_zmax = 2635
+                  Size of Si plates in Ecal ring  = 776 mm
+For backward compatibility, setting TPC_Ecal_Hcal_barrel_halfZ to 2350
+Sub_detector SEcal05 DONE!
+
+
+Building sub_detector LumiCalV_cepc, geometry db VOID, driver SLcal_cepc:
+The luminosity calorimeter for cepc
+  Current parameters for the LumiCalV_cepc detector : 
+   - Ecal_Lcal_ring_gap = 54.8
+   - Ecal_endcap_plug_rmin = 226.8
+   - Ecal_endcap_zmax = 2635
+   - Ecal_endcap_zmin = 2450
+   - ILC_Main_Crossing_Angle = 0
+   - LStar_zbegin = 1300
+   - Lcal_beam_pipe_clearance = 0.5
+   - Lcal_extra_size = 26
+   - Lcal_inner_radius = 60.0
+   - Lcal_layer_gap = 0.25
+   - Lcal_n_layers = 30
+   - Lcal_n_tiles = 12
+   - Lcal_nstrips_phi = 48
+   - Lcal_nstrips_theta = 64
+   - Lcal_outer_radius = 172
+   - Lcal_phi_offset = 0
+   - Lcal_sensor_phi_offset = 3.75
+   - Lcal_silicon_thickness = 0.32
+   - Lcal_support_thickness = 0.2
+   - Lcal_tile_gap = 1.2
+   - Lcal_tungsten_thickness = 3.5
+   - Lcal_type = pad
+   - Lcal_z_begin = 2450
+   - Lcal_z_thickness = 130
+Connecting to the database "models03"
+WARNING: User variable "TIMEOUT_TO_RELAX_TMP" of type string is unknown, you'll get the empty string.
+WARNING: User variable "SLEEP_BEFORE_RETRY" of type int is unknown, you'll get "0".
+CONNECTION_ID = 1199647, UNIX_TIMESTAMP = 1436695641, waiting for an available temporary database...
+tmp database name is TMP_DB17
+
+SLcal_cepc - the LumiCal super driver v1.1
+ Database name : VOID
+ Lcal_length 128.1
+ Lcal_z_begin updated from 2450 to 1146.9 [ mm ] 
+SLcal_cepc has set the following values :
+    crossing_angle     = 0
+    type               = pad
+    z_begin            = 1146.9
+    calo_inner_radius  = 60
+    calo_outer_radius  = 172
+    calo_extra_size    = 26
+    n_layers           = 30
+    n_tiles            = 12
+    nstrips_theta      = 64
+    nstrips_phi        = 48
+    phi_offset         = 0
+    sensor_phi_offset  = 3.75
+    tungsten_thickness = 3.5
+    support_thickness  = 0.2
+    silicon_thickness  = 0.32
+    layer_gap          = 0.25
+    tile_gap           = 1.2
+
+Super detector SLcal_cepc DONE!
+
+Connecting to the database "TMP_DB17"
+
+ LumiCalV00 start building ... : 
+
+====================================================
+|  LumiCal sensor inner radius set to  62.117 [mm] |
+====================================================
+gear: lcalParameters  BeamCrossingAngle = 0
+gear: lcalParameters  Phi0 = 0
+SD created <LumiCal>
+Connecting to the database "materials02"
+stainless_steel->GetRadlen() = 1.7658 cm 
+ rotangle1 180 bx_angle 0 [deg]
+ LumiCalV00 done.
+
+Sub_detector LumiCalV_cepc DONE!
+
+
+Building sub_detector SHcalRpc01, geometry db VOID, driver SHcalRpc01:
+New Digital Hcal super driver without tmp database for ILC
+  Current parameters for the SHcalRpc01 detector : 
+   - ChipPackageThickness = 1.6
+   - DHcal_max_step = 10.0
+   - Ecal_endcap_outer_radius = 2088.8
+   - Ecal_endcap_zmax = 2635
+   - Ecal_endcap_zmin = 2450
+   - Ecal_outer_radius = 2028
+   - EdgeWidth = 1.0
+   - Gap_Thickness = 1.2
+   - GazInletInnerRadius = 0.4
+   - GazInletLength = 3.0
+   - GazInletOuterRadius = 0.5
+   - Graphite_ThicknessAnode = 0.05
+   - Graphite_ThicknessCathode = 0.05
+   - Hcal_Ecal_gap = 30
+   - Hcal_MinNumCellsInTransvPlane = 11
+   - Hcal_R_max = 2900.
+   - Hcal_back_plate_thickness = 15
+   - Hcal_barrel_number_modules = 5
+   - Hcal_cells_size = 10.408
+   - Hcal_chamber_thickness = 6.73
+   - Hcal_endcap_cables_gap = 214
+   - Hcal_endcap_center_box_size = 700.0
+   - Hcal_endcap_ecal_gap = 15
+   - Hcal_fiber_gap = 1.5
+   - Hcal_lateral_structure_thickness = 10
+   - Hcal_modules_gap = 2
+   - Hcal_nlayers = 48
+   - Hcal_outer_radius = 3000.
+   - Hcal_radial_ring_inner_gap = 50
+   - Hcal_radiator_material = stainless_steel
+   - Hcal_radiator_thickness = 20
+   - Hcal_ring = 1
+   - Hcal_spacer_separation = 100
+   - Hcal_spacer_thickness = 8
+   - Hcal_stave_gaps = 3
+   - PCB_Thickness = 0.8
+   - PadSeparation = 0
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+   - ThickGlass = 1.1
+   - ThinGlass = 0.7
+   - mylar_ThicknessAnode = 0.05
+   - mylar_ThicknessCathode = 0.18
+
+Building Hcal...
+Connecting to the database "materials02"
+graphite->GetRadlen() = 19.3199 cm 
+Connecting to the database "materials02"
+mylar->GetRadlen() = 28.5364 cm 
+theRPC2ECRMixture->GetRadlen() = 231.081 mm
+stainless_steel is the radiator material being placed.
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+soda->GetRadlen() = 12.6809 cm 
+Connecting to the database "materials02"
+CaO->GetRadlen() = 5.76051 cm 
+Connecting to the database "materials02"
+MgO->GetRadlen() = 7.82758 cm 
+FloatGlass->GetRadlen() = 10.7985 cm 
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+PEEK->GetRadlen() = 32.2097 cm 
+PEEK-GF30->GetRadlen() = 21.6465 cm 
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+isobutane->GetRadlen() = 169.395 m  
+Connecting to the database "materials02"
+tetra_fluoro_ethane->GetRadlen() = 77.2646 m  
+Connecting to the database "materials02"
+SF6->GetRadlen() = 47.0451 m  
+RPCGAS2->GetRadlen() = 78.8137 m  
+Connecting to the database "materials02"
+nylon->GetRadlen() = 36.7677 cm 
+Rings will have 6 layers.
+SHcal information: Hcal_outer_radius = 3385.53
+                   module thickness = 1327.53
+                   Hcal_R_max = 3385.53
+                   calorimeter_region_rmax = 3385.53
+                   calorimeter_region_zmax = 3977.53
+Sub_detector SHcalRpc01 DONE!
+
+
+Building sub_detector tube_cepc, geometry db tube_cepc, driver Tube_cepc:
+tube for cepc single pipe
+  Current parameters for the tube_cepc detector : 
+   - Ecal_endcap_zmax = 2635
+   - ILC_Main_Crossing_Angle = 0
+   - LHcal_inner_radius = 93
+   - LHcal_zend = 3085
+   - LStar_zbegin = 1300
+   - Lcal_beam_pipe_clearance = 0.5
+   - Lcal_inner_radius = 60.0
+   - Lcal_outer_radius = 172
+   - Lcal_z_begin = 1146.9
+   - TUBE_IPOuterBulge_end_radius = 0.0
+   - TUBE_IPOuterBulge_end_z = 0.0
+   - TUBE_IPOuterTube_end_radius = 0.0
+   - TUBE_IPOuterTube_end_z = 0.0
+   - TUBE_IPOuterTube_start_radius = 0.0
+   - TUBE_IPOuterTube_start_z = 0.0
+   - VXD_inner_radius = 16
+   - VXD_radius_r1 = 16
+Connecting to the database "tube_cepc_0"
+Tube_cepc: Using Ecal_endcap_zmax = 2635 mm instead of 2470.5 mm
+Tube_cepc: Using LHcal_inner_radius = 93 mm instead of 130 mm
+Tube_cepc: Using Lcal_outer_radius = 172 mm instead of 175 mm
+Tube_cepc: Using LHcal_zend = 3085 mm instead of 3100 mm
+Tube_cepc: Using LStar_zbegin = 1300 mm instead of 1500 mm
+Tube_cepc: Be sure you know what you're doing!
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+CO->GetRadlen() = 299.574 m  
+beam->GetRadlen() = 2.59816e+10 km 
+Connecting to the database "materials02"
+iron->GetRadlen() = 1.75749 cm 
+Sub_detector tube_cepc DONE!
+
+
+Building sub_detector mask_cepc, geometry db mask_cepc, driver Mask_cepc:
+Forward mask for cepc single pipe
+  Current parameters for the mask_cepc detector : 
+   - Ecal_endcap_zmax = 2635
+   - ILC_Main_Crossing_Angle = 0
+   - LHcal_inner_radius = 93
+   - LHcal_zend = 3085
+   - LStar_zbegin = 1300
+Connecting to the database "mask_cepc_0"
+Connecting to the database "mask_cepc_0"
+Mask_cepc: Using Ecal_endcap_zmax = 2635 mm instead of 2470.5 mm
+Mask_cepc: Using LHcal_inner_radius = 93 mm instead of 95 mm
+Mask_cepc: Using LHcal_zend = 3085 mm instead of 3100 mm
+Mask_cepc: Using LStar_zbegin = 1300 mm instead of 1500 mm
+Mask_cepc: Be sure you know what you're doing!
+Connecting to the database "materials02"
+tungsten->GetRadlen() = 3.50418 mm 
+Sub_detector mask_cepc DONE!
+
+
+Building sub_detector tpc10_01, geometry db tpc10_01, driver tpc10:
+Pad-row-based TPC with Endplate of 25 percent X0
+  Current parameters for the tpc10_01 detector : 
+   - Ecal_Tpc_gap = 35
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+   - TPC_inner_radius = 329
+   - TPC_max_step_length = 10
+   - TPC_outer_radius = 1808
+   - TPC_pad_height = 6
+   - TPC_pad_width = 1
+Connecting to the database "tpc10_01"
+Connecting to the database "materials02"
+Connecting to the database "materials02"
+CH4->GetRadlen() = 696.479 m  
+Connecting to the database "materials02"
+CO2->GetRadlen() = 196.486 m  
+TDR_gas->GetRadlen() = 115.521 m  
+ Cathode Grip Ring Material: SiC_foam : Rad length = 1345.64 mm.
+Endplate material mix Density   = 0.582752 g/cm3
+Endplate material mix Radlength = 564.518 mm
+TPC10: Inner radius of the gas volume is  354 mm.
+TPC10: Outer radius of the gas volume is 1748 mm.
+TPC10: Inner wall thickness is   25 mm.
+TPC10: Outer wall thickness is   60 mm.
+TPC10: Outer wall thickness is   60 mm.
+TPC10: Inner radius of the sensitive volume is  384 mm.
+TPC10: Outer radius of the sensitive volume is 1718 mm.
+TPC10: Number of Pad Rows in the TPC   222
+TPC10: Limiting the step length in the TPC to    10 mm.
+TPC10: Total Gas material corresponds to 1.20671% of a radiation length.
+TPC10: Add Material to Inner Wall: dr =  0.01 mm. Material = G4_Al X0 = 88.9632  0.000112406% X0
+TPC10: gear_inner_wall_material_total_density = 6.73833e+15
+TPC10: Add Material to Inner Wall: dr =  0.05 mm. Material = G4_KAPTON X0 = 285.748  0.000174979% X0
+TPC10: gear_inner_wall_material_total_density = 2.44642e+16
+TPC10: Add Material to Inner Wall: dr =   0.3 mm. Material = g10 X0 = 162.002  0.00185183% X0
+TPC10: gear_inner_wall_material_total_density = 1.51791e+17
+TPC10: Add Material to Inner Wall: dr =  24.22 mm. Material = G4_AIR X0 = 303921  7.96918e-05% X0
+TPC10: gear_inner_wall_material_total_density = 1.59076e+17
+TPC10: Add Material to Inner Wall: dr =   0.3 mm. Material = g10 X0 = 162.002  0.00185183% X0
+TPC10: gear_inner_wall_material_total_density = 2.86403e+17
+TPC10: Add Material to Inner Wall: dr =  0.05 mm. Material = G4_KAPTON X0 = 285.748  0.000174979% X0
+TPC10: gear_inner_wall_material_total_density = 3.04129e+17
+TPC10: Add Material to Inner Wall: dr =  0.07 mm. Material = G4_Cu X0 = 14.3558  0.00487608% X0
+TPC10: gear_inner_wall_material_total_density = 4.60716e+17
+TPC10: Inner wall material corresponds to 0.9% of a radiation length.
+TPC10: Inner wall effective X0 = 2740.69
+TPC10: Add Material to Outer Wall: dr =  0.07 mm. Material = G4_Cu X0 = 14.3558  0.00487608% X0
+TPC10: gear_outer_wall_material_total_density = 6.52446e+16
+TPC10: Add Material to Outer Wall: dr =  0.05 mm. Material = G4_KAPTON X0 = 285.748  0.000174979% X0
+TPC10: gear_outer_wall_material_total_density = 7.26304e+16
+TPC10: Add Material to Outer Wall: dr =   0.3 mm. Material = g10 X0 = 162.002  0.00185183% X0
+TPC10: gear_outer_wall_material_total_density = 1.25683e+17
+TPC10: Add Material to Outer Wall: dr =  59.22 mm. Material = G4_AIR X0 = 303921  0.000194853% X0
+TPC10: gear_outer_wall_material_total_density = 1.33105e+17
+TPC10: Add Material to Outer Wall: dr =   0.3 mm. Material = g10 X0 = 162.002  0.00185183% X0
+TPC10: gear_outer_wall_material_total_density = 1.86158e+17
+TPC10: Add Material to Outer Wall: dr =  0.05 mm. Material = G4_KAPTON X0 = 285.748  0.000174979% X0
+TPC10: gear_outer_wall_material_total_density = 1.93544e+17
+TPC10: Add Material to Outer Wall: dr =  0.01 mm. Material = G4_Al X0 = 88.9632  0.000112406% X0
+TPC10: gear_outer_wall_material_total_density = 1.96351e+17
+TPC10: Outer wall material corresponds to 0.9% of a radiation length.
+TPC10: Outer wall effective X0 = 6495.65
+Cathode dz = 0.0275
+Place cathode +z at 0.01375
+Place cathode -z at -0.01375
+TPCSD04: TPCLowPtStepLimit OFF
+TPCSD04: TPCLowPtStoreMCPForHits OFF
+TPCSD04: Threshold for Energy Deposit = 32 eV
+TPCSD04: TPCLowPtCut = 10 MeV 
+TPCSD04: TPCLowPt Max hit separation 5 mm
+TPC10: Readout material corresponds to 7.2% of a radiation length.
+TPC10: Total Endplate material corresponds to 24.9857% of a radiation length.
+Sub_detector tpc10_01 DONE!
+
+
+Building sub_detector sit_simple_planar_sensors_03, geometry db sit_simple_planar_sensors_03, driver SIT_Simple_Planar:
+Simple planar based SIT with Sensors
+Connecting to the database "sit_simple_planar_sensors_03"
+SIT_Simple_Planar: Layer:1	 half length = 368	 sensor length = 92	 n sensors per ladder = 8	 min r sensitive = 152.9	 min r support = 153.1	 n ladders = 10	 ladder width = 99.1604	 ladder clearance = 0.1	 ladder dphi = 0.628319	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 1	 is_SIT1 = 1	 is_SIT2 = 0
+SIT_Simple_Planar: Layer:2	 half length = 368	 sensor length = 92	 n sensors per ladder = 8	 min r sensitive = 155.4	 min r support = 154.4	 n ladders = 10	 ladder width = 100.135	 ladder clearance = 0.1	 ladder dphi = 0.628319	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 0	 is_SIT1 = 0	 is_SIT2 = 0
+SIT_Simple_Planar: Layer:3	 half length = 644	 sensor length = 92	 n sensors per ladder = 14	 min r sensitive = 299.9	 min r support = 300.1	 n ladders = 19	 ladder width = 99.8889	 ladder clearance = 0.1	 ladder dphi = 0.330694	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 1	 is_SIT1 = 0	 is_SIT2 = 1
+SIT_Simple_Planar: Layer:4	 half length = 644	 sensor length = 92	 n sensors per ladder = 14	 min r sensitive = 302.4	 min r support = 301.4	 n ladders = 19	 ladder width = 100.39	 ladder clearance = 0.1	 ladder dphi = 0.330694	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 0	 is_SIT1 = 0	 is_SIT2 = 0
+SIT_Simple_Planar done.
+
+Sub_detector sit_simple_planar_sensors_03 DONE!
+
+
+Building sub_detector ftd_cepc, geometry db ftd_cepc, driver FTD_cepc:
+ftd for cepc single pipe
+  Current parameters for the ftd_cepc detector : 
+   - Ecal_endcap_zmin = 2450
+   - LStar_zbegin = 1300
+   - SIT1_Half_Length_Z = 368
+   - SIT1_Radius = 152.9
+   - SIT2_Half_Length_Z = 644
+   - SIT2_Radius = 299.9
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+   - TPC_inner_radius = 329
+   - TUBE_IPOuterBulge_end_radius = 78.9243
+   - TUBE_IPOuterBulge_end_z = 1080
+   - TUBE_IPOuterTube_end_radius = 25
+   - TUBE_IPOuterTube_end_z = 230
+   - TUBE_IPOuterTube_start_radius = 25
+   - TUBE_IPOuterTube_start_z = 220
+   - VXD_length_r3 = 125
+Connecting to the database "ftd_cepc"
+CarbonFiber->GetRadlen() = 28.6084 cm
+FTD_cepc:	 inner support thickness = 1	 cables thickness = 0.08	 2 x cable shield thickness = 0.2	 beamTubeClearance = 15
+FTD_cepc: Disk:1	 z = 220	 inner rad = 40	 outer rad = 151.9	 beamtube rad = 25	 free space = 13.22
+FTD_cepc: Disk:2	 z = 371.309	 inner rad = 49.0916	 outer rad = 151.9	 beamtube rad = 34.0916	 free space = 13.22
+FTD_cepc: Disk:3	 z = 644.906	 inner rad = 66.4931	 outer rad = 298.9	 beamtube rad = 51.4931	 free space = 13.22
+FTD_cepc: Disk:4	 z = 846	 inner rad = 79.2505	 outer rad = 309	 beamtube rad = 64.2505	 free space = 13.22
+FTD_cepc: Disk:5	 z = 1057.5	 inner rad = 92.6682	 outer rad = 309	 beamtube rad = 77.6682	 free space = 13.22
+FTD_cepc: Disk:6	 z = 1848.54	 inner rad = 142.852	 outer rad = 309	 beamtube rad = 127.852	 free space = 13.22
+FTD_cepc: Disk:7	 z = 2250	 inner rad = 168.321	 outer rad = 309	 beamtube rad = 153.321	 free space = 13.22
+Sub_detector ftd_cepc DONE!
+
+
+Building sub_detector set_simple_planar_sensors_01, geometry db set_simple_planar_sensors_01, driver SET_Simple_Planar:
+Simple planar based SET with Sensors
+  Current parameters for the set_simple_planar_sensors_01 detector : 
+   - Ecal_Tpc_gap = 35
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+   - TPC_outer_radius = 1808
+Connecting to the database "set_simple_planar_sensors_01"
+SET_Simple_Planar: Layer:1	 half length = 2300	 sensor length = 92	 n sensors per ladder = 50	 min r sensitive = 1810.9	 min r support = 1811.1	 n ladders = 24	 ladder width = 476.619	 ladder clearance = 0.1	 ladder dphi = 0.261799	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 1
+SET_Simple_Planar: Layer:2	 half length = 2300	 sensor length = 92	 n sensors per ladder = 50	 min r sensitive = 1813.4	 min r support = 1812.4	 n ladders = 24	 ladder width = 477.014	 ladder clearance = 0.1	 ladder dphi = 0.261799	 sensitive mat = G4_Si	 support mat = G4_C	 faces_IP = 0
+SET_Simple_Planar done.
+
+Sub_detector set_simple_planar_sensors_01 DONE!
+
+
+Building sub_detector SCoil03, geometry db VOID, driver SCoil02:
+Coil using Coil Cryostat with detector instrumentation by Saveliev
+  Current parameters for the SCoil03 detector : 
+   - Coil_Yoke_lateral_clearance = 200.0
+   - Coil_Yoke_radial_clearance = 250
+   - Coil_extra_size = 1522
+   - Coil_thickness = 750.0
+   - Hcal_Coil_additional_gap = 29.5
+   - Hcal_R_max = 3385.53
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+Connecting to the database "models03"
+WARNING: User variable "TIMEOUT_TO_RELAX_TMP" of type string is unknown, you'll get the empty string.
+WARNING: User variable "SLEEP_BEFORE_RETRY" of type int is unknown, you'll get "0".
+CONNECTION_ID = 1199707, UNIX_TIMESTAMP = 1436695647, waiting for an available temporary database...
+tmp database name is TMP_DB17
+SCoil information: Yoke_barrel_inner_radius = 4415.02978515625
+                   Yoke_Z_start_endcaps = 4072
+Super detector SCoil02 DONE!
+
+
+Building Coil...
+Connecting to the database "TMP_DB17"
+
+... cryostat inner_raduus 3415.03
+... cryostat outer_raduus 4165.03
+... cryostat half_z       3872
+Connecting to the database "materials02"
+polystyrene->GetRadlen() = 41.3124 cm 
+Coil done.
+
+Sub_detector SCoil03 DONE!
+
+
+Building sub_detector yoke05, geometry db yoke04, driver yoke05:
+new Muon System by Saveliev
+  Current parameters for the yoke05 detector : 
+   - Yoke_Z_start_endcaps = 4072
+   - Yoke_barrel_inner_radius = 4415.02978515625
+   - Yoke_endcap_inner_radius = 300
+   - Yoke_thickness = 2550
+   - Yoke_with_plug = true
+Connecting to the database "yoke04"
+  ...Yoke  db: symmetry             12
+  ...Yoke  db: rInnerBarrel         4415.03
+  ...Yoke  db: rInnerEndcap         300
+  ...Yoke  db: zStartEndcap         4072
+  ...Muon  db: iron_thickness       100
+  ...Muon  db: gap_thickness        40
+  ...Muon  db: number_of_layers     10
+  ...Muon  db: yokeBarrelEndcapGap  25
+  ...Muon par: yokeBarrelThickness  3241
+  ...Muon par: Barrel_half_z        4047
+  ...Muon par: yokeBarrelEndcapGap  25
+  ...Muon par: zStartEndcap         4072
+  ...Muon par: yokeEndcapThickness  2600
+  ...Muon par: cell_dim_x           30
+  ...Muon par: cell_dim_z           30
+ Plug is  true
+  ...Plug par: HCAL_half_z          3977.53
+  ...Plug par: HCAL_Plug_Gap        45
+  ...Plug par: Plug Thickness       49.47
+  ...Plug par: Plug Radius          3385.53
+3977.53 45 4072 3385.53 49.47
+  ...Barrel i, position: 0 4435.53
+Connecting to the database "materials02"
+Air->GetRadlen() = 303.921 m  
+  ...Barrel i, position: 1 4575.53
+  ...Barrel i, position: 2 4715.53
+  ...Barrel i, position: 3 4855.53
+  ...Barrel i, position: 4 4995.53
+  ...Barrel i, position: 5 5135.53
+  ...Barrel i, position: 6 5275.53
+  ...Barrel i, position: 7 5415.53
+  ...Barrel i, position: 8 5555.53
+  ...Barrel i, position: 9 5695.53
+  ...Barrel i, position: 10 5835.53
+  ...Barrel i, position: 11 6435.53
+  ...Barrel i, position: 12 7035.53
+  ...Barrel i, position: 13 7635.53
+  ...Endcap i, position: 0 4192.5
+  ...Endcap i, position: 1 4332.5
+  ...Endcap i, position: 2 4472.5
+  ...Endcap i, position: 3 4612.5
+  ...Endcap i, position: 4 4752.5
+  ...Endcap i, position: 5 4892.5
+  ...Endcap i, position: 6 5032.5
+  ...Endcap i, position: 7 5172.5
+  ...Endcap i, position: 8 5312.5
+  ...Endcap i, position: 9 5452.5
+  ...Endcap i, position: 10 6052.5
+  ...Endcap i, position: 11 6652.5
+Sub_detector yoke05 DONE!
+
+
+Building sub_detector SField01, geometry db VOID, driver SField01:
+A super field depending on the coil and yoke parameters.
+  Current parameters for the SField01 detector : 
+   - Coil_extra_size = 1522
+   - Coil_thickness = 750.0
+   - FieldPropagator_LargestAcceptableStep = -1
+   - Field_nominal_value = 3.5
+   - Hcal_R_max = 3385.53
+   - TPC_Ecal_Hcal_barrel_halfZ = 2350
+   - Yoke_BField_cutoff = 1.5
+   - Yoke_barrel_inner_radius = 4415.02978515625
+   - Yoke_thickness = 2550
+Connecting to the database "models03"
+WARNING: User variable "TIMEOUT_TO_RELAX_TMP" of type string is unknown, you'll get the empty string.
+WARNING: User variable "SLEEP_BEFORE_RETRY" of type int is unknown, you'll get "0".
+CONNECTION_ID = 1199717, UNIX_TIMESTAMP = 1436695650, waiting for an available temporary database...
+tmp database name is TMP_DB16
+The magnetic field vector inside the Yoke volume is (0., 0.,-1.5)
+Super detector SField01 DONE!
+
+
+Building Field...
+Field00: global magnetic field factor is 1.000000
+Connecting to the database "TMP_DB16"
+Field done.
+
+Sub_detector SField01 DONE!
+
+model's tracker_region_rmax = 1842
+===> tracker_region_rmax set to 1842.9
+model's tracker_region_zmax = 2500
+===> tracker_region_zmax set to 2350
+models's calorimeter_region_rmax = 3490
+===> calorimeter_region_rmax set to 3385.53
+models's calorimeter_region_zmax = 4044
+===> calorimeter_region_zmax set to 3977.53
+
+Detector construction done.
+WARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 4
+                                                      FTFP: Emin(GeV)=    2  Emax(GeV)= 100000
+
+        ionInelastic  Crs sctns: Glauber-Gribov nucleus nucleus: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 0.1
+                                              AntiAElastic: Emin(GeV)=  0.1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hFritiofCaptureAtRest
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:   ChipsHyperonInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:     ChipsNeutronElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+    NeutronInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)=    0  Emax(GeV)= 20000
+
+            nCapture  Crs sctns:          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)=    0  Emax(GeV)= 20000
+
+            nFission  Crs sctns:          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:      ChipsProtonElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+TPC10: Create Inner Wall Material 
+TPC10: Add Material to Inner Wall: material G4_AIR X0 = 303921 dr = 24.22  fraction 0.9688
+TPC10: Add Material to Inner Wall: material G4_Al X0 = 88.9632 dr = 0.01  fraction 0.0004
+TPC10: Add Material to Inner Wall: material G4_Cu X0 = 14.3558 dr = 0.07  fraction 0.0028
+TPC10: Add Material to Inner Wall: material g10 X0 = 162.002 dr = 0.6  fraction 0.024
+TPC10: Add Material to Inner Wall: material G4_KAPTON X0 = 285.748 dr = 0.1  fraction 0.004
+TPC10: Add Material to Outer Wall: material G4_AIR X0 = 303921 dr = 59.22  fraction 0.987
+TPC10: Add Material to Outer Wall: material G4_Al X0 = 88.9632 dr = 0.01  fraction 0.000166667
+TPC10: Add Material to Outer Wall: material G4_Cu X0 = 14.3558 dr = 0.07  fraction 0.00116667
+TPC10: Add Material to Outer Wall: material g10 X0 = 162.002 dr = 0.6  fraction 0.01
+TPC10: Add Material to Outer Wall: material G4_KAPTON X0 = 285.748 dr = 0.1  fraction 0.00166667
+TPC10: Inner Wall: material X0 = 489.736 cm Density = 0.0738148 g/cm3
+TPC10: Outer Wall: material X0 = 1157.71 cm Density = 0.031459 g/cm3
+Constructing VisManager...
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+
+MokkaGear -Status- geometry printed out to xml
+lStdHep version 2.0 (23.01.2006) by W.G.J. Langeveld, SLAC
+HepLCIOInterfaceNew in binary input mode
+###$$$ RunManager::BeamOn:   Random Seed Value = 1234567890 $$$###
+Graphics systems deleted.
+Visualization Manager deleting...
+
+real	7m2.955s
+user	6m46.899s
+sys	0m0.488s
